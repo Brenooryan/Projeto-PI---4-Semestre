@@ -1,0 +1,702 @@
+ID da Venda,Data da Venda,Modelo,Marca,Cor,Tamanho,Estampa,Quantidade,Preço Unitário (R$),Valor Total do Item (R$),Etiqueta
+1,2024-12-19,Camisa Manga Curta,Nike,Preto,M,Sem estampa,2,296.99,593.98,ETQ001
+2,2024-12-14,Camisa Manga Longa,Tommy Hilfiger,Azul Claro,GG,Estampa pequena na frente,1,22.99,22.99,ETQ002
+3,2024-06-21,Tênis,Puma,Cinza,42,Sem estampa,1,229.99,229.99,ETQ003
+4,2024-05-29,Camiseta Polo,Oakley,Branco,G,Estampa grande nas costas,3,396.99,1190.97,ETQ004
+5,2024-12-09,Bermuda de Sarja,Lacoste,Bege,44,Sem estampa,1,218.99,218.99,ETQ005
+6,2024-12-13,Bermuda de Sarja,Element,Azul Marinho,GG,Estampa grande na frente,2,223.99,447.98,ETQ006
+7,2024-11-25,Short Jeans,Lacoste,Marrom,XGG,Estampa pequena na frente e grande atrás,1,187.99,187.99,ETQ007
+8,2024-11-29,Moletom com Capuz,Vans,Azul Claro,GG,Estampa pequena na frente e grande atrás,2,359.99,719.98,ETQ008
+9,2024-12-22,Short Jeans,Hurley,Azul Claro,40,Sem estampa,1,81.99,81.99,ETQ009
+10,2024-10-20,Camisa Regata,Sem Marca,Branco,GG,Estampa pequena na frente e grande atrás,3,138.99,416.97,ETQ010
+11,2024-12-24,Camiseta Polo,Tommy Hilfiger,Vermelho,XG,Sem estampa,3,203.99,611.97,ETQ011
+12,2024-07-02,Jaqueta,Quiksilver,Verde,40,Estampa pequena na frente e grande atrás,5,363.99,1819.95,ETQ012
+13,2024-09-19,Calça Jeans,Hurley,Bege,GG,Sem estampa,5,299.99,1499.95,ETQ013
+14,2024-06-07,Calça Moletom,Puma,Bege,GG,Estampa grande nas costas,5,282.99,1414.95,ETQ014
+15,2024-05-19,Camisa Manga Longa,Nike,Verde,40,Sem estampa,4,369.99,1479.96,ETQ015
+16,2024-03-19,Bermuda de Sarja,Vans,Cinza,P,Estampa grande na frente,2,62.99,125.98,ETQ016
+17,2024-11-19,Chinelo,Puma,Bege,G,Estampa pequena na frente e grande atrás,5,370.99,1854.95,ETQ017
+18,2024-12-30,Calça Moletom,Oakley,Bege,P,Estampa grande na frente,3,208.99,626.97,ETQ018
+19,2024-12-19,Moletom com Capuz,Calvin Klein,Preto,GG,Estampa grande nas costas,2,80.99,161.98,ETQ019
+20,2024-12-22,Camisa Manga Longa,Tommy Hilfiger,Cinza,G,Sem estampa,1,100.99,100.99,ETQ020
+21,2024-07-06,Camiseta Polo,Puma,Marrom,44,Estampa pequena na frente,4,120.99,483.96,ETQ021
+22,2024-06-11,Short Jeans,Hurley,Azul Marinho,42,Sem estampa,1,54.99,54.99,ETQ022
+23,2024-08-14,Camiseta Polo,Element,Preto,40,Estampa pequena na frente,5,161.99,809.95,ETQ023
+24,2024-04-30,Camisa Regata,Oakley,Marrom,42,Estampa grande na frente,3,255.99,767.97,ETQ024
+25,2024-06-05,Calça Jeans,Nike,Branco,42,Sem estampa,1,302.99,302.99,ETQ025
+26,2024-02-03,Jaqueta,Sem Marca,Cinza,GG,Sem estampa,1,368.99,368.99,ETQ026
+27,2024-04-21,Camisa Manga Curta,Nike,Azul Claro,M,Estampa pequena na frente e grande atrás,2,209.99,419.98,ETQ027
+28,2024-12-21,Bermuda de Sarja,Element,Preto,44,Estampa grande nas costas,3,38.99,116.97,ETQ028
+29,2024-05-15,Short Jeans,Calvin Klein,Azul Claro,XGG,Estampa grande na frente,1,263.99,263.99,ETQ029
+30,2024-01-08,Camisa Manga Curta,Lacoste,Vermelho,XGG,Sem estampa,5,341.99,1709.95,ETQ030
+31,2024-06-07,Bermuda de Sarja,Lacoste,Marrom,44,Sem estampa,1,78.99,78.99,ETQ031
+32,2024-05-19,Moletom com Capuz,Calvin Klein,Cinza,XGG,Estampa grande nas costas,2,306.99,613.98,ETQ032
+33,2024-11-24,Short Jeans,Hurley,Azul Marinho,GG,Estampa grande na frente,5,361.99,1809.95,ETQ033
+34,2024-12-24,Camisa Manga Longa,Quiksilver,Branco,G,Estampa pequena na frente e grande atrás,2,364.99,729.98,ETQ034
+35,2024-06-02,Calça Moletom,Calvin Klein,Azul Claro,XGG,Estampa grande nas costas,2,368.99,737.98,ETQ035
+36,2024-11-13,Camisa Regata,Puma,Verde,P,Estampa pequena na frente e grande atrás,1,315.99,315.99,ETQ036
+37,2024-11-25,Moletom com Capuz,Hurley,Branco,42,Estampa pequena na frente,2,367.99,735.98,ETQ037
+39,2024-11-29,Chinelo,Quiksilver,Azul Claro,GG,Estampa pequena na frente,3,303.99,911.97,ETQ039
+40,2024-03-13,Calça Jeans,Nike,Vermelho,GG,Estampa pequena na frente,2,363.99,727.98,ETQ040
+41,2024-10-30,Chinelo,Sem Marca,Cinza,G,Estampa grande na frente,3,24.99,74.97,ETQ041
+42,2024-06-04,Camiseta Polo,Adidas,Verde,XGG,Estampa grande nas costas,5,301.99,1509.95,ETQ042
+43,2024-09-15,Calça Jeans,Quiksilver,Verde,GG,Estampa grande nas costas,1,100.99,100.99,ETQ043
+44,2024-07-06,Tênis,Adidas,Azul Marinho,42,Estampa grande nas costas,1,27.99,27.99,ETQ044
+45,2024-08-21,Camisa Manga Curta,Lacoste,Branco,XGG,Estampa grande nas costas,4,119.99,479.96,ETQ045
+46,2024-12-12,Bermuda de Sarja,Puma,Bege,XG,Estampa grande na frente,1,363.99,363.99,ETQ046
+47,2024-11-09,Camisa Manga Curta,Reserva,Bege,XGG,Estampa pequena na frente e grande atrás,5,161.99,809.95,ETQ047
+48,2024-11-05,Camisa Manga Longa,Vans,Vermelho,44,Estampa pequena na frente,4,157.99,631.96,ETQ048
+49,2024-04-12,Bermuda de Sarja,Element,Azul Claro,XGG,Estampa grande na frente,3,36.99,110.97,ETQ049
+50,2024-11-26,Short Jeans,Lacoste,Verde,42,Sem estampa,2,58.99,117.98,ETQ050
+51,2024-03-13,Camisa Manga Longa,Reserva,Cinza,XG,Estampa grande nas costas,1,74.99,74.99,ETQ051
+52,2024-10-28,Camiseta Polo,Tommy Hilfiger,Vermelho,XG,Sem estampa,3,37.99,113.97,ETQ052
+53,2024-11-07,Camiseta Polo,Vans,Azul Claro,40,Estampa grande nas costas,1,154.99,154.99,ETQ053
+54,2024-11-23,Calça Moletom,Reserva,Cinza,XGG,Estampa pequena na frente e grande atrás,1,171.99,171.99,ETQ054
+55,2024-11-24,Calça Moletom,Adidas,Azul Claro,44,Estampa grande na frente,5,210.99,1054.95,ETQ055
+56,2024-07-06,Camisa Manga Curta,Tommy Hilfiger,Azul Marinho,M,Estampa pequena na frente e grande atrás,3,394.99,1184.97,ETQ056
+57,2024-11-06,Calça Jeans,Quiksilver,Marrom,44,Estampa pequena na frente e grande atrás,5,368.99,1844.95,ETQ057
+58,2024-11-24,Short Jeans,Sem Marca,Preto,44,Estampa grande nas costas,1,380.99,380.99,ETQ058
+59,2024-01-18,Moletom com Capuz,Hurley,Cinza,GG,Estampa pequena na frente e grande atrás,4,301.99,1207.96,ETQ059
+60,2024-06-29,Camisa Regata,Reserva,Cinza,G,Estampa pequena na frente,3,211.99,635.97,ETQ060
+61,2024-05-29,Camisa Manga Longa,Tommy Hilfiger,Azul Claro,GG,Estampa pequena na frente,1,202.99,202.99,ETQ061
+62,2024-02-24,Camisa Manga Longa,Quiksilver,Bege,44,Estampa grande nas costas,4,34.99,139.96,ETQ062
+63,2024-06-17,Tênis,Hurley,Branco,M,Sem estampa,5,48.99,244.95,ETQ063
+64,2024-12-10,Bermuda de Sarja,Nike,Preto,44,Estampa grande nas costas,4,301.99,1207.96,ETQ064
+65,2024-04-18,Camiseta Polo,Tommy Hilfiger,Verde,XGG,Estampa pequena na frente e grande atrás,2,356.99,713.98,ETQ065
+66,2024-08-02,Short Jeans,Element,Bege,42,Estampa pequena na frente e grande atrás,1,314.99,314.99,ETQ066
+67,2024-04-10,Short Jeans,Calvin Klein,Azul Marinho,P,Estampa pequena na frente,2,306.99,613.98,ETQ067
+68,2024-05-14,Camiseta Polo,Tommy Hilfiger,Marrom,XG,Estampa pequena na frente,2,39.99,79.98,ETQ068
+69,2024-12-19,Chinelo,Calvin Klein,Azul Claro,40,Estampa pequena na frente e grande atrás,5,28.99,144.95,ETQ069
+70,2024-06-02,Tênis,Oakley,Azul Claro,XGG,Estampa pequena na frente e grande atrás,1,189.99,189.99,ETQ070
+71,2024-12-11,Calça Jeans,Nike,Branco,42,Sem estampa,1,282.99,282.99,ETQ071
+72,2024-12-17,Tênis,Quiksilver,Preto,42,Estampa pequena na frente,4,27.99,111.96,ETQ072
+73,2024-11-29,Tênis,Puma,Marrom,M,Estampa pequena na frente e grande atrás,5,117.99,589.9499999999999,ETQ073
+74,2024-12-24,Camiseta Polo,Calvin Klein,Preto,P,Estampa pequena na frente,2,368.99,737.98,ETQ074
+75,2024-06-07,Camisa Manga Curta,Nike,Preto,G,Sem estampa,5,157.99,789.95,ETQ075
+76,2024-04-15,Camisa Manga Longa,Tommy Hilfiger,Marrom,40,Estampa grande na frente,2,198.99,397.98,ETQ076
+77,2024-12-21,Calça Moletom,Oakley,Cinza,XG,Estampa pequena na frente e grande atrás,1,295.99,295.99,ETQ077
+78,2024-05-18,Camisa Manga Longa,Lacoste,Verde,G,Sem estampa,4,37.99,151.96,ETQ078
+79,2024-11-24,Camisa Regata,Calvin Klein,Azul Marinho,42,Sem estampa,2,398.99,797.98,ETQ079
+80,2024-12-12,Calça Moletom,Oakley,Azul Marinho,P,Estampa pequena na frente,3,241.99,725.97,ETQ080
+81,2024-12-19,Bermuda de Sarja,Vans,Vermelho,P,Estampa grande nas costas,3,199.99,599.97,ETQ081
+82,2024-11-21,Tênis,Reserva,Bege,M,Estampa grande na frente,4,257.99,1031.96,ETQ082
+83,2024-09-03,Chinelo,Element,Azul Marinho,GG,Sem estampa,5,266.99,1334.95,ETQ083
+84,2024-11-27,Moletom com Capuz,Element,Bege,GG,Estampa grande nas costas,5,236.99,1184.95,ETQ084
+85,2024-04-29,Chinelo,Quiksilver,Branco,XG,Estampa pequena na frente,5,239.99,1199.95,ETQ085
+86,2024-12-10,Short Jeans,Quiksilver,Branco,P,Estampa pequena na frente e grande atrás,5,190.99,954.95,ETQ086
+87,2024-08-30,Camisa Manga Curta,Tommy Hilfiger,Vermelho,42,Estampa grande na frente,2,208.99,417.98,ETQ087
+88,2024-04-27,Camiseta Polo,Nike,Marrom,42,Estampa pequena na frente e grande atrás,2,170.99,341.98,ETQ088
+89,2024-12-22,Tênis,Calvin Klein,Bege,P,Estampa grande na frente,4,297.99,1191.96,ETQ089
+90,2024-06-08,Camisa Manga Curta,Vans,Azul Claro,G,Estampa grande nas costas,1,247.99,247.99,ETQ090
+91,2024-12-15,Calça Jeans,Reserva,Bege,M,Sem estampa,2,24.99,49.98,ETQ091
+92,2024-03-05,Camiseta Polo,Puma,Marrom,44,Estampa pequena na frente,4,280.99,1123.96,ETQ092
+93,2024-05-31,Bermuda de Sarja,Calvin Klein,Azul Marinho,44,Estampa pequena na frente e grande atrás,2,109.99,219.98,ETQ093
+94,2024-12-24,Camisa Manga Longa,Tommy Hilfiger,Cinza,G,Sem estampa,4,359.99,1439.96,ETQ094
+95,2024-04-16,Camisa Regata,Lacoste,Verde,XGG,Estampa pequena na frente e grande atrás,4,260.99,1043.96,ETQ095
+96,2024-06-20,Short Moletom,Element,Verde,GG,Estampa grande nas costas,5,94.99,474.95,ETQ096
+97,2024-01-06,Jaqueta,Oakley,Azul Claro,XGG,Estampa pequena na frente,1,277.99,277.99,ETQ097
+98,2024-12-10,Jaqueta,Tommy Hilfiger,Marrom,P,Sem estampa,1,334.99,334.99,ETQ098
+99,2024-06-04,Short Moletom,Vans,Vermelho,XGG,Estampa grande nas costas,1,31.99,31.99,ETQ099
+100,2024-06-05,Moletom com Capuz,Nike,Marrom,G,Estampa pequena na frente e grande atrás,2,79.99,159.98,ETQ100
+101,2024-10-05,Short Jeans,Lacoste,Marrom,XGG,Estampa pequena na frente e grande atrás,1,209.99,209.99,ETQ101
+102,2024-02-09,Short Moletom,Sem Marca,Azul Marinho,GG,Estampa pequena na frente,3,79.99,239.97,ETQ102
+103,2024-06-03,Camisa Regata,Nike,Cinza,44,Estampa grande nas costas,2,149.99,299.98,ETQ103
+104,2024-12-23,Camisa Manga Curta,Hurley,Branco,G,Estampa grande na frente,5,88.99,444.95,ETQ104
+105,2024-11-14,Calça Jeans,Quiksilver,Marrom,GG,Estampa grande na frente,1,316.99,316.99,ETQ105
+106,2024-04-23,Short Jeans,Element,Preto,M,Estampa pequena na frente e grande atrás,3,314.99,944.97,ETQ106
+107,2024-01-17,Calça Moletom,Puma,Bege,GG,Estampa grande nas costas,5,132.99,664.95,ETQ107
+108,2024-12-04,Camiseta Polo,Nike,Preto,P,Estampa grande na frente,1,280.99,280.99,ETQ108
+109,2024-10-04,Jaqueta,Puma,Marrom,40,Estampa grande nas costas,2,161.99,323.98,ETQ109
+110,2024-05-02,Calça Jeans,Quiksilver,Marrom,G,Estampa pequena na frente,2,285.99,571.98,ETQ110
+111,2024-03-25,Moletom com Capuz,Hurley,Vermelho,P,Estampa grande nas costas,1,125.99,125.99,ETQ111
+112,2024-11-26,Moletom com Capuz,Lacoste,Preto,XGG,Estampa pequena na frente,4,380.99,1523.96,ETQ112
+113,2024-02-02,Short Jeans,Puma,Azul Claro,XGG,Estampa grande nas costas,2,246.99,493.98,ETQ113
+114,2024-07-19,Camisa Regata,Quiksilver,Branco,XG,Estampa pequena na frente,3,236.99,710.97,ETQ114
+115,2024-02-25,Bermuda de Sarja,Reserva,Branco,XGG,Estampa grande nas costas,5,392.99,1964.95,ETQ115
+116,2024-06-07,Short Moletom,Lacoste,Branco,G,Estampa pequena na frente e grande atrás,5,359.99,1799.95,ETQ116
+117,2024-12-16,Bermuda de Sarja,Reserva,Azul Marinho,42,Sem estampa,4,106.99,427.96,ETQ117
+118,2024-12-07,Bermuda de Sarja,Adidas,Vermelho,GG,Estampa grande na frente,5,54.99,274.95,ETQ118
+119,2024-12-15,Short Moletom,Vans,Marrom,P,Sem estampa,2,65.99,131.98,ETQ119
+120,2024-12-15,Bermuda de Sarja,Tommy Hilfiger,Marrom,G,Sem estampa,1,270.99,270.99,ETQ120
+121,2024-08-15,Calça Jeans,Puma,Vermelho,GG,Estampa grande na frente,2,62.99,125.98,ETQ121
+122,2024-01-25,Camisa Regata,Oakley,Marrom,42,Estampa grande na frente,3,167.99,503.97,ETQ122
+123,2024-03-30,Jaqueta,Lacoste,Preto,P,Estampa grande na frente,5,148.99,744.95,ETQ123
+124,2024-04-27,Chinelo,Hurley,Bege,GG,Estampa grande na frente,4,357.99,1431.96,ETQ124
+125,2024-11-28,Camiseta Polo,Puma,Marrom,XG,Estampa grande na frente,1,226.99,226.99,ETQ125
+126,2024-05-28,Calça Jeans,Hurley,Marrom,P,Estampa grande nas costas,1,113.99,113.99,ETQ126
+127,2024-10-09,Bermuda de Sarja,Hurley,Bege,G,Estampa pequena na frente,1,64.99,64.99,ETQ127
+128,2024-05-28,Camisa Manga Longa,Hurley,Verde,42,Estampa grande na frente,1,217.99,217.99,ETQ128
+129,2024-10-09,Short Moletom,Lacoste,Marrom,44,Sem estampa,1,356.99,356.99,ETQ129
+130,2024-09-18,Calça Jeans,Vans,Azul Claro,44,Estampa pequena na frente e grande atrás,5,100.99,504.95,ETQ130
+131,2024-02-13,Short Jeans,Hurley,Azul Marinho,GG,Estampa grande na frente,5,318.99,1594.95,ETQ131
+132,2024-06-06,Chinelo,Puma,Azul Marinho,P,Estampa grande na frente,4,85.99,343.96,ETQ132
+133,2024-12-22,Tênis,Element,Preto,XG,Estampa pequena na frente,2,289.99,579.98,ETQ133
+134,2024-11-29,Camisa Manga Curta,Calvin Klein,Azul Marinho,XGG,Estampa pequena na frente e grande atrás,2,189.99,379.98,ETQ134
+135,2024-02-05,Tênis,Hurley,Azul Marinho,M,Estampa pequena na frente e grande atrás,4,232.99,931.96,ETQ135
+136,2024-12-07,Camisa Regata,Lacoste,Bege,P,Sem estampa,1,41.99,41.99,ETQ136
+137,2024-07-06,Short Moletom,Sem Marca,Branco,40,Sem estampa,3,341.99,1025.97,ETQ137
+138,2024-07-05,Short Moletom,Puma,Verde,M,Estampa grande na frente,4,96.99,387.96,ETQ138
+139,2024-12-24,Short Moletom,Vans,Azul Claro,44,Estampa grande nas costas,2,383.99,767.98,ETQ139
+140,2024-01-01,Jaqueta,Calvin Klein,Bege,G,Estampa pequena na frente,3,353.99,1061.97,ETQ140
+141,2024-01-22,Camisa Manga Longa,Element,Azul Marinho,GG,Estampa pequena na frente e grande atrás,1,334.99,334.99,ETQ141
+142,2024-08-13,Short Moletom,Reserva,Azul Claro,42,Estampa pequena na frente e grande atrás,5,83.99,419.95,ETQ142
+143,2024-10-23,Jaqueta,Vans,Preto,40,Sem estampa,5,305.99,1529.95,ETQ143
+144,2024-12-15,Jaqueta,Hurley,Preto,M,Estampa grande na frente,3,225.99,677.97,ETQ144
+145,2024-10-14,Bermuda de Sarja,Sem Marca,Branco,42,Estampa pequena na frente,5,133.99,669.95,ETQ145
+146,2024-06-17,Calça Moletom,Hurley,Verde,G,Estampa pequena na frente e grande atrás,3,106.99,320.97,ETQ146
+147,2024-12-18,Chinelo,Tommy Hilfiger,Verde,44,Estampa grande nas costas,3,379.99,1139.97,ETQ147
+148,2024-12-16,Moletom com Capuz,Element,Verde,40,Sem estampa,3,77.99,233.97,ETQ148
+149,2024-03-03,Short Moletom,Vans,Preto,44,Estampa pequena na frente,3,237.99,713.97,ETQ149
+150,2024-05-22,Camiseta Polo,Lacoste,Bege,M,Estampa grande na frente,3,115.99,347.97,ETQ150
+151,2024-04-13,Short Jeans,Hurley,Azul Marinho,XGG,Estampa pequena na frente e grande atrás,1,148.99,148.99,ETQ151
+152,2024-11-28,Camisa Manga Longa,Vans,Azul Claro,P,Estampa pequena na frente,3,229.99,689.97,ETQ152
+153,2024-06-10,Calça Moletom,Calvin Klein,Cinza,G,Estampa grande na frente,3,63.99,191.97,ETQ153
+154,2024-05-05,Camisa Manga Longa,Vans,Marrom,M,Estampa pequena na frente e grande atrás,5,193.99,969.95,ETQ154
+155,2024-12-09,Camisa Manga Curta,Calvin Klein,Cinza,GG,Estampa pequena na frente,1,118.99,118.99,ETQ155
+156,2024-06-05,Camisa Manga Longa,Puma,Cinza,XG,Estampa pequena na frente,3,91.99,275.97,ETQ156
+157,2024-11-03,Moletom com Capuz,Tommy Hilfiger,Bege,XG,Estampa grande nas costas,4,22.99,91.96,ETQ157
+158,2024-12-21,Bermuda de Sarja,Quiksilver,Verde,XG,Estampa grande na frente,3,164.99,494.97,ETQ158
+159,2024-03-27,Chinelo,Sem Marca,Bege,XGG,Estampa pequena na frente e grande atrás,4,231.99,927.96,ETQ159
+160,2024-01-20,Bermuda de Sarja,Element,Preto,44,Estampa grande nas costas,3,210.99,632.97,ETQ160
+161,2024-12-13,Camisa Regata,Element,Verde,M,Estampa grande na frente,2,90.99,181.98,ETQ161
+162,2024-11-25,Tênis,Hurley,Cinza,G,Estampa grande na frente,5,48.99,244.95,ETQ162
+163,2024-12-18,Camisa Manga Longa,Sem Marca,Bege,40,Estampa grande na frente,5,241.99,1209.95,ETQ163
+164,2024-10-18,Calça Moletom,Puma,Cinza,42,Estampa pequena na frente,2,232.99,465.98,ETQ164
+165,2024-07-30,Short Jeans,Adidas,Branco,44,Sem estampa,3,69.99,209.97,ETQ165
+166,2024-01-15,Moletom com Capuz,Vans,Azul Claro,GG,Estampa pequena na frente e grande atrás,2,73.99,147.98,ETQ166
+167,2024-06-04,Camisa Manga Longa,Quiksilver,Branco,G,Estampa pequena na frente e grande atrás,2,249.99,499.98,ETQ167
+168,2024-12-24,Bermuda de Sarja,Element,Azul Marinho,GG,Estampa grande na frente,2,265.99,531.98,ETQ168
+169,2024-12-23,Moletom com Capuz,Element,Marrom,44,Estampa grande na frente,5,146.99,734.95,ETQ169
+170,2024-01-28,Calça Jeans,Tommy Hilfiger,Azul Claro,44,Estampa grande na frente,3,323.99,971.97,ETQ170
+171,2024-07-10,Tênis,Quiksilver,Preto,GG,Estampa grande nas costas,2,282.99,565.98,ETQ171
+172,2024-11-22,Camiseta Polo,Puma,Branco,XGG,Estampa grande nas costas,1,351.99,351.99,ETQ172
+173,2024-12-22,Camisa Regata,Calvin Klein,Bege,40,Estampa pequena na frente e grande atrás,3,267.99,803.97,ETQ173
+174,2024-06-05,Tênis,Calvin Klein,Azul Marinho,44,Estampa grande na frente,3,346.99,1040.97,ETQ174
+175,2024-12-15,Calça Moletom,Nike,Marrom,42,Estampa grande na frente,5,378.99,1894.95,ETQ175
+176,2024-12-29,Jaqueta,Sem Marca,Marrom,XG,Estampa grande nas costas,4,96.99,387.96,ETQ176
+177,2024-11-22,Short Jeans,Lacoste,Branco,XG,Estampa pequena na frente,5,372.99,1864.95,ETQ177
+178,2024-12-22,Jaqueta,Vans,Azul Marinho,G,Estampa grande na frente,4,171.99,687.96,ETQ178
+179,2024-10-26,Camiseta Polo,Oakley,Marrom,40,Estampa grande nas costas,3,129.99,389.97,ETQ179
+180,2024-06-30,Camisa Regata,Puma,Verde,P,Estampa pequena na frente e grande atrás,1,315.99,315.99,ETQ180
+181,2024-01-31,Camisa Manga Curta,Oakley,Cinza,M,Sem estampa,2,119.99,239.98,ETQ181
+182,2024-12-21,Camiseta Polo,Hurley,Cinza,G,Estampa pequena na frente,2,317.99,635.98,ETQ182
+183,2024-11-23,Short Moletom,Element,Verde,XGG,Estampa pequena na frente,1,272.99,272.99,ETQ183
+184,2024-06-04,Calça Moletom,Oakley,Bege,P,Estampa grande na frente,3,51.99,155.97,ETQ184
+185,2024-11-23,Tênis,Element,Azul Marinho,44,Estampa grande nas costas,5,290.99,1454.95,ETQ185
+186,2024-02-25,Short Jeans,Reserva,Bege,M,Sem estampa,2,101.99,203.98,ETQ186
+187,2024-10-25,Moletom com Capuz,Hurley,Branco,42,Estampa pequena na frente,2,102.99,205.98,ETQ187
+188,2024-06-23,Tênis,Calvin Klein,Azul Claro,M,Estampa grande nas costas,4,236.99,947.96,ETQ188
+189,2024-04-06,Short Jeans,Oakley,Azul Marinho,XGG,Estampa pequena na frente,1,76.99,76.99,ETQ189
+190,2024-06-27,Short Moletom,Element,Cinza,P,Estampa grande na frente,5,359.99,1799.95,ETQ190
+191,2024-07-18,Camisa Regata,Hurley,Azul Marinho,40,Estampa grande nas costas,4,188.99,755.96,ETQ191
+192,2024-07-17,Chinelo,Puma,Cinza,M,Estampa pequena na frente e grande atrás,1,290.99,290.99,ETQ192
+193,2024-09-24,Camisa Manga Longa,Nike,Verde,40,Sem estampa,4,359.99,1439.96,ETQ193
+194,2024-03-26,Chinelo,Hurley,Azul Claro,P,Estampa pequena na frente,2,124.99,249.98,ETQ194
+195,2024-11-26,Bermuda de Sarja,Oakley,Bege,XGG,Estampa pequena na frente,4,227.99,911.96,ETQ195
+196,2024-03-01,Short Jeans,Calvin Klein,Azul Claro,XGG,Estampa grande na frente,1,230.99,230.99,ETQ196
+197,2024-03-15,Camisa Regata,Sem Marca,Branco,GG,Estampa pequena na frente e grande atrás,3,221.99,665.97,ETQ197
+198,2024-01-05,Short Moletom,Lacoste,Bege,42,Estampa pequena na frente,5,124.99,624.9499999999999,ETQ198
+199,2024-12-21,Camiseta Polo,Sem Marca,Vermelho,44,Estampa grande na frente,3,390.99,1172.97,ETQ199
+200,2024-04-28,Camisa Manga Longa,Adidas,Azul Marinho,P,Estampa grande nas costas,2,290.99,581.98,ETQ200
+201,2024-11-30,Camisa Regata,Hurley,Branco,P,Sem estampa,5,270.99,1354.95,ETQ201
+202,2024-10-06,Camiseta Polo,Element,Preto,40,Estampa pequena na frente,5,218.99,1094.95,ETQ202
+203,2024-09-07,Camisa Regata,Reserva,Branco,44,Estampa pequena na frente,3,221.99,665.97,ETQ203
+204,2024-01-09,Camisa Regata,Nike,Azul Marinho,42,Estampa grande nas costas,1,304.99,304.99,ETQ204
+205,2024-02-05,Short Jeans,Element,Marrom,42,Sem estampa,4,35.99,143.96,ETQ205
+206,2024-09-28,Calça Jeans,Hurley,Bege,GG,Sem estampa,5,170.99,854.95,ETQ206
+207,2024-07-09,Short Jeans,Calvin Klein,Marrom,44,Estampa grande na frente,3,58.99,176.97,ETQ207
+208,2024-06-08,Moletom com Capuz,Reserva,Cinza,40,Estampa pequena na frente e grande atrás,5,49.99,249.95,ETQ208
+209,2024-09-02,Camisa Regata,Lacoste,Branco,42,Estampa pequena na frente,3,287.99,863.97,ETQ209
+210,2024-10-18,Camiseta Polo,Hurley,Preto,40,Estampa grande nas costas,5,119.99,599.9499999999999,ETQ210
+211,2024-09-04,Calça Moletom,Reserva,Verde,44,Estampa pequena na frente e grande atrás,5,281.99,1409.95,ETQ211
+212,2024-02-26,Camisa Regata,Tommy Hilfiger,Azul Claro,40,Estampa pequena na frente,3,124.99,374.97,ETQ212
+213,2024-12-19,Bermuda de Sarja,Lacoste,Preto,G,Estampa grande nas costas,3,27.99,83.97,ETQ213
+214,2024-01-31,Short Moletom,Puma,Bege,XG,Estampa pequena na frente e grande atrás,1,81.99,81.99,ETQ214
+215,2024-10-21,Camisa Regata,Sem Marca,Vermelho,XG,Estampa grande na frente,5,223.99,1119.95,ETQ215
+216,2024-04-01,Bermuda de Sarja,Adidas,Preto,44,Estampa grande nas costas,4,354.99,1419.96,ETQ216
+217,2024-06-27,Moletom com Capuz,Oakley,Branco,XG,Estampa pequena na frente,1,127.99,127.99,ETQ217
+218,2024-11-03,Jaqueta,Vans,Preto,40,Estampa pequena na frente e grande atrás,5,127.99,639.9499999999999,ETQ218
+219,2024-05-31,Tênis,Vans,Marrom,P,Estampa pequena na frente e grande atrás,3,195.99,587.97,ETQ219
+220,2024-11-22,Chinelo,Lacoste,Preto,P,Estampa pequena na frente e grande atrás,4,23.99,95.96,ETQ220
+221,2024-09-18,Jaqueta,Quiksilver,Verde,40,Estampa pequena na frente e grande atrás,5,380.99,1904.95,ETQ221
+222,2024-04-26,Short Moletom,Lacoste,Bege,XGG,Estampa pequena na frente e grande atrás,1,308.99,308.99,ETQ222
+223,2024-07-17,Chinelo,Puma,Bege,G,Estampa pequena na frente e grande atrás,5,245.99,1229.95,ETQ223
+224,2024-04-29,Camisa Manga Longa,Nike,Branco,44,Estampa pequena na frente,4,194.99,779.96,ETQ224
+225,2024-07-30,Bermuda de Sarja,Hurley,Branco,GG,Sem estampa,2,121.99,243.98,ETQ225
+226,2024-11-23,Short Moletom,Vans,Cinza,P,Estampa grande na frente,1,351.99,351.99,ETQ226
+227,2024-03-15,Camisa Manga Curta,Puma,Preto,42,Estampa grande nas costas,1,278.99,278.99,ETQ227
+228,2024-01-31,Camisa Manga Longa,Puma,Marrom,44,Estampa pequena na frente,2,169.99,339.98,ETQ228
+229,2024-11-25,Tênis,Lacoste,Branco,44,Estampa pequena na frente e grande atrás,3,265.99,797.97,ETQ229
+230,2024-02-15,Short Moletom,Adidas,Cinza,40,Estampa grande nas costas,5,286.99,1434.95,ETQ230
+231,2024-01-08,Short Moletom,Element,Cinza,XG,Sem estampa,5,310.99,1554.95,ETQ231
+232,2024-06-17,Short Moletom,Oakley,Cinza,P,Estampa grande nas costas,4,235.99,943.96,ETQ232
+233,2024-06-12,Short Moletom,Nike,Azul Marinho,XGG,Estampa pequena na frente e grande atrás,1,111.99,111.99,ETQ233
+234,2024-05-16,Calça Moletom,Calvin Klein,Azul Claro,XGG,Estampa grande nas costas,2,291.99,583.98,ETQ234
+235,2024-09-20,Camisa Manga Curta,Lacoste,Vermelho,XGG,Sem estampa,5,63.99,319.95,ETQ235
+236,2024-01-09,Camisa Manga Curta,Lacoste,Vermelho,42,Estampa pequena na frente e grande atrás,4,110.99,443.96,ETQ236
+237,2024-09-13,Camiseta Polo,Calvin Klein,Cinza,M,Sem estampa,3,390.99,1172.97,ETQ237
+238,2024-04-01,Bermuda de Sarja,Vans,Cinza,P,Estampa grande na frente,2,252.99,505.98,ETQ238
+239,2024-11-20,Short Moletom,Tommy Hilfiger,Bege,44,Estampa pequena na frente,1,351.99,351.99,ETQ239
+240,2024-07-25,Bermuda de Sarja,Oakley,Preto,G,Sem estampa,4,201.99,807.96,ETQ240
+241,2024-12-11,Jaqueta,Lacoste,Vermelho,44,Estampa pequena na frente e grande atrás,2,336.99,673.98,ETQ241
+242,2024-05-05,Moletom com Capuz,Puma,Azul Marinho,40,Estampa grande na frente,1,102.99,102.99,ETQ242
+243,2024-12-18,Chinelo,Sem Marca,Vermelho,44,Estampa pequena na frente e grande atrás,5,251.99,1259.95,ETQ243
+244,2024-05-13,Camiseta Polo,Adidas,Vermelho,XG,Sem estampa,1,322.99,322.99,ETQ244
+245,2024-09-25,Short Moletom,Adidas,Verde,XG,Estampa pequena na frente,1,99.99,99.99,ETQ245
+246,2024-11-30,Moletom com Capuz,Lacoste,Cinza,XGG,Sem estampa,5,310.99,1554.95,ETQ246
+247,2024-03-01,Camisa Manga Curta,Puma,Azul Claro,M,Estampa grande nas costas,5,124.99,624.9499999999999,ETQ247
+248,2024-03-01,Chinelo,Vans,Bege,42,Estampa pequena na frente e grande atrás,5,141.99,709.95,ETQ248
+249,2024-08-28,Short Jeans,Lacoste,Cinza,40,Sem estampa,3,88.99,266.97,ETQ249
+250,2024-11-29,Camisa Manga Curta,Nike,Vermelho,GG,Estampa grande na frente,1,60.99,60.99,ETQ250
+251,2024-11-29,Bermuda de Sarja,Sem Marca,Preto,GG,Sem estampa,1,40.99,40.99,ETQ251
+252,2024-04-27,Chinelo,Adidas,Verde,GG,Sem estampa,2,310.99,621.98,ETQ252
+253,2024-02-02,Tênis,Element,Verde,40,Estampa pequena na frente,4,192.99,771.96,ETQ253
+254,2024-12-23,Moletom com Capuz,Vans,Verde,G,Sem estampa,3,144.99,434.97,ETQ254
+255,2024-06-09,Jaqueta,Oakley,Verde,GG,Sem estampa,2,24.99,49.98,ETQ255
+256,2024-01-21,Jaqueta,Element,Azul Marinho,42,Estampa grande na frente,2,380.99,761.98,ETQ256
+257,2024-03-15,Short Jeans,Reserva,Marrom,G,Estampa grande na frente,2,309.99,619.98,ETQ257
+258,2024-06-16,Camisa Manga Longa,Oakley,Azul Claro,42,Estampa pequena na frente e grande atrás,2,210.99,421.98,ETQ258
+259,2024-02-20,Calça Jeans,Element,Azul Marinho,XGG,Estampa pequena na frente,3,144.99,434.97,ETQ259
+260,2024-09-05,Short Moletom,Adidas,Vermelho,G,Estampa grande nas costas,5,125.99,629.9499999999999,ETQ260
+261,2024-08-21,Camisa Regata,Hurley,Azul Marinho,42,Estampa grande nas costas,3,93.99,281.97,ETQ261
+262,2024-11-20,Short Jeans,Quiksilver,Azul Claro,XGG,Sem estampa,4,388.99,1555.96,ETQ262
+263,2024-11-23,Calça Moletom,Calvin Klein,Branco,40,Estampa pequena na frente,1,220.99,220.99,ETQ263
+264,2024-12-16,Short Jeans,Element,Cinza,42,Estampa grande na frente,5,59.99,299.95,ETQ264
+265,2024-12-04,Bermuda de Sarja,Element,Azul Claro,XGG,Estampa grande nas costas,2,71.99,143.98,ETQ265
+266,2024-05-26,Calça Moletom,Puma,Azul Marinho,G,Estampa grande nas costas,3,75.99,227.97,ETQ266
+267,2024-05-04,Camisa Regata,Adidas,Cinza,M,Estampa pequena na frente e grande atrás,4,72.99,291.96,ETQ267
+268,2024-04-05,Short Jeans,Calvin Klein,Vermelho,XG,Estampa grande nas costas,2,156.99,313.98,ETQ268
+269,2024-12-23,Jaqueta,Oakley,Azul Marinho,42,Estampa pequena na frente,5,70.99,354.95,ETQ269
+270,2024-11-24,Moletom com Capuz,Calvin Klein,Verde,G,Estampa grande nas costas,2,48.99,97.98,ETQ270
+271,2024-12-26,Camisa Manga Longa,Puma,Preto,XG,Estampa pequena na frente e grande atrás,1,331.99,331.99,ETQ271
+272,2024-03-20,Calça Jeans,Tommy Hilfiger,Azul Marinho,42,Estampa grande nas costas,5,192.99,964.95,ETQ272
+273,2024-04-23,Calça Jeans,Puma,Marrom,40,Estampa pequena na frente,3,367.99,1103.97,ETQ273
+274,2024-05-08,Camisa Manga Longa,Puma,Marrom,44,Estampa pequena na frente e grande atrás,5,241.99,1209.95,ETQ274
+275,2024-07-07,Short Jeans,Adidas,Azul Claro,GG,Sem estampa,2,174.99,349.98,ETQ275
+276,2024-12-04,Moletom com Capuz,Element,Marrom,42,Estampa grande nas costas,3,124.99,374.97,ETQ276
+277,2024-02-18,Camiseta Polo,Reserva,Azul Claro,40,Estampa grande na frente,4,355.99,1423.96,ETQ277
+278,2024-03-20,Short Moletom,Quiksilver,Cinza,XGG,Estampa pequena na frente e grande atrás,2,97.99,195.98,ETQ278
+279,2024-10-28,Camisa Manga Longa,Hurley,Vermelho,44,Sem estampa,1,347.99,347.99,ETQ279
+280,2024-05-31,Camisa Manga Curta,Element,Azul Marinho,M,Estampa pequena na frente,1,273.99,273.99,ETQ280
+281,2024-03-07,Tênis,Quiksilver,Preto,P,Estampa pequena na frente,3,347.99,1043.97,ETQ281
+282,2024-01-12,Calça Moletom,Calvin Klein,Preto,G,Sem estampa,4,337.99,1351.96,ETQ282
+283,2024-12-23,Jaqueta,Lacoste,Branco,42,Estampa grande na frente,1,120.99,120.99,ETQ283
+284,2024-03-03,Camisa Manga Curta,Reserva,Branco,XGG,Estampa grande na frente,1,310.99,310.99,ETQ284
+285,2024-11-21,Bermuda de Sarja,Reserva,Verde,M,Estampa grande nas costas,3,374.99,1124.97,ETQ285
+286,2024-12-17,Calça Jeans,Hurley,Cinza,40,Estampa pequena na frente,3,300.99,902.97,ETQ286
+287,2024-09-26,Camisa Manga Curta,Reserva,Cinza,P,Sem estampa,5,84.99,424.95,ETQ287
+288,2024-06-08,Tênis,Tommy Hilfiger,Azul Claro,XG,Estampa pequena na frente,2,368.99,737.98,ETQ288
+289,2024-11-29,Camiseta Polo,Calvin Klein,Azul Marinho,G,Estampa grande nas costas,3,126.99,380.97,ETQ289
+290,2024-06-14,Calça Moletom,Adidas,Bege,42,Estampa grande nas costas,3,83.99,251.97,ETQ290
+291,2024-06-11,Camisa Manga Longa,Tommy Hilfiger,Verde,44,Estampa pequena na frente,2,52.99,105.98,ETQ291
+292,2024-12-15,Jaqueta,Hurley,Bege,M,Estampa pequena na frente,4,105.99,423.96,ETQ292
+293,2024-07-20,Short Moletom,Tommy Hilfiger,Verde,GG,Estampa grande nas costas,1,306.99,306.99,ETQ293
+294,2024-07-17,Short Moletom,Puma,Azul Claro,40,Sem estampa,4,321.99,1287.96,ETQ294
+295,2024-06-02,Tênis,Element,Preto,P,Estampa pequena na frente,2,318.99,637.98,ETQ295
+296,2024-02-16,Jaqueta,Calvin Klein,Cinza,M,Sem estampa,3,26.99,80.97,ETQ296
+297,2024-12-25,Calça Moletom,Oakley,Verde,P,Estampa pequena na frente e grande atrás,4,210.99,843.96,ETQ297
+298,2024-04-27,Short Moletom,Reserva,Bege,XGG,Estampa grande na frente,3,72.99,218.97,ETQ298
+299,2024-04-05,Calça Moletom,Quiksilver,Bege,P,Estampa pequena na frente e grande atrás,2,387.99,775.98,ETQ299
+300,2024-09-30,Moletom com Capuz,Calvin Klein,Marrom,42,Estampa grande nas costas,5,100.99,504.95,ETQ300
+301,2024-12-25,Bermuda de Sarja,Quiksilver,Marrom,44,Estampa grande na frente,1,298.99,298.99,ETQ301
+302,2024-04-26,Camisa Manga Longa,Adidas,Azul Marinho,40,Estampa pequena na frente e grande atrás,2,110.99,221.98,ETQ302
+303,2024-12-10,Camisa Manga Longa,Lacoste,Preto,42,Estampa pequena na frente,1,237.99,237.99,ETQ303
+304,2024-01-01,Camisa Manga Longa,Reserva,Preto,42,Sem estampa,1,112.99,112.99,ETQ304
+305,2024-03-27,Short Jeans,Reserva,Cinza,G,Estampa pequena na frente e grande atrás,1,64.99,64.99,ETQ305
+306,2024-10-31,Bermuda de Sarja,Hurley,Cinza,42,Sem estampa,4,149.99,599.96,ETQ306
+307,2024-11-02,Camiseta Polo,Adidas,Verde,XGG,Estampa grande na frente,5,348.99,1744.95,ETQ307
+308,2024-01-24,Calça Jeans,Lacoste,Vermelho,M,Estampa grande nas costas,4,196.99,787.96,ETQ308
+309,2024-02-06,Short Jeans,Hurley,Marrom,GG,Sem estampa,3,275.99,827.97,ETQ309
+310,2024-03-24,Calça Moletom,Quiksilver,Azul Claro,XGG,Estampa pequena na frente,1,230.99,230.99,ETQ310
+311,2024-07-05,Calça Moletom,Nike,Verde,G,Estampa grande na frente,5,396.99,1984.95,ETQ311
+312,2024-08-02,Camisa Regata,Element,Marrom,40,Sem estampa,5,239.99,1199.95,ETQ312
+313,2024-06-23,Camisa Manga Curta,Reserva,Marrom,G,Sem estampa,4,284.99,1139.96,ETQ313
+314,2024-06-03,Chinelo,Sem Marca,Preto,44,Estampa pequena na frente e grande atrás,1,138.99,138.99,ETQ314
+315,2024-04-29,Tênis,Element,Azul Claro,GG,Estampa grande nas costas,4,253.99,1015.96,ETQ315
+316,2024-04-30,Tênis,Nike,Preto,XGG,Estampa pequena na frente,3,79.99,239.97,ETQ316
+317,2024-12-23,Short Moletom,Element,Cinza,G,Sem estampa,2,147.99,295.98,ETQ317
+318,2024-05-06,Tênis,Vans,Preto,44,Estampa grande nas costas,2,136.99,273.98,ETQ318
+319,2024-07-20,Short Moletom,Lacoste,Azul Claro,G,Estampa pequena na frente e grande atrás,3,252.99,758.97,ETQ319
+320,2024-01-18,Short Moletom,Reserva,Bege,GG,Estampa pequena na frente e grande atrás,1,159.99,159.99,ETQ320
+321,2024-11-22,Calça Moletom,Nike,Verde,44,Sem estampa,2,89.99,179.98,ETQ321
+322,2024-06-19,Short Moletom,Element,Cinza,P,Estampa grande na frente,5,266.99,1334.95,ETQ322
+323,2024-10-27,Camisa Manga Longa,Vans,Bege,40,Estampa pequena na frente e grande atrás,4,110.99,443.96,ETQ323
+324,2024-09-25,Camisa Manga Curta,Quiksilver,Branco,GG,Estampa pequena na frente e grande atrás,4,49.99,199.96,ETQ324
+325,2024-11-22,Camisa Manga Curta,Puma,Branco,XG,Estampa grande na frente,2,271.99,543.98,ETQ325
+326,2024-12-20,Camisa Manga Longa,Quiksilver,Preto,XGG,Estampa grande na frente,5,87.99,439.95,ETQ326
+327,2024-01-20,Short Jeans,Calvin Klein,Azul Marinho,G,Sem estampa,1,142.99,142.99,ETQ327
+328,2024-12-27,Camisa Manga Curta,Nike,Bege,G,Estampa pequena na frente,2,308.99,617.98,ETQ328
+329,2024-06-29,Camisa Regata,Sem Marca,Branco,44,Estampa grande na frente,1,219.99,219.99,ETQ329
+330,2024-11-20,Camisa Manga Curta,Reserva,Cinza,P,Sem estampa,1,158.99,158.99,ETQ330
+331,2024-12-02,Short Jeans,Calvin Klein,Preto,G,Sem estampa,5,364.99,1824.95,ETQ331
+332,2024-05-02,Jaqueta,Reserva,Marrom,GG,Estampa grande na frente,5,319.99,1599.95,ETQ332
+333,2024-11-03,Moletom com Capuz,Puma,Azul Claro,XG,Estampa grande nas costas,5,378.99,1894.95,ETQ333
+334,2024-12-13,Tênis,Calvin Klein,Azul Claro,44,Estampa pequena na frente e grande atrás,5,318.99,1594.95,ETQ334
+335,2024-09-22,Short Jeans,Reserva,Bege,42,Sem estampa,2,298.99,597.98,ETQ335
+336,2024-10-04,Tênis,Tommy Hilfiger,Bege,40,Estampa pequena na frente,4,114.99,459.96,ETQ336
+337,2024-10-29,Calça Jeans,Lacoste,Azul Marinho,G,Estampa grande nas costas,5,116.99,584.9499999999999,ETQ337
+338,2024-09-10,Camisa Regata,Puma,Azul Claro,M,Estampa pequena na frente e grande atrás,5,68.99,344.95,ETQ338
+339,2024-12-25,Chinelo,Nike,Marrom,P,Estampa pequena na frente,2,86.99,173.98,ETQ339
+340,2024-12-20,Short Moletom,Adidas,Branco,P,Estampa grande nas costas,1,19.99,19.99,ETQ340
+341,2024-12-13,Short Moletom,Hurley,Azul Marinho,M,Sem estampa,2,143.99,287.98,ETQ341
+342,2024-08-15,Short Moletom,Reserva,Verde,G,Estampa grande na frente,2,44.99,89.98,ETQ342
+343,2024-08-08,Moletom com Capuz,Nike,Branco,XGG,Estampa grande na frente,1,117.99,117.99,ETQ343
+344,2024-06-02,Moletom com Capuz,Quiksilver,Preto,40,Estampa pequena na frente e grande atrás,4,228.99,915.96,ETQ344
+345,2024-08-11,Jaqueta,Element,Branco,P,Estampa grande nas costas,4,387.99,1551.96,ETQ345
+346,2024-06-10,Camiseta Polo,Puma,Preto,P,Estampa grande nas costas,2,379.99,759.98,ETQ346
+347,2024-11-22,Camiseta Polo,Nike,Bege,42,Estampa grande nas costas,1,221.99,221.99,ETQ347
+348,2024-08-09,Camiseta Polo,Oakley,Azul Claro,XG,Estampa grande nas costas,1,83.99,83.99,ETQ348
+349,2024-11-23,Camisa Manga Longa,Puma,Branco,XG,Estampa pequena na frente,2,103.99,207.98,ETQ349
+350,2024-06-11,Short Moletom,Calvin Klein,Azul Claro,GG,Sem estampa,3,75.99,227.97,ETQ350
+351,2024-11-01,Bermuda de Sarja,Calvin Klein,Cinza,M,Sem estampa,4,233.99,935.96,ETQ351
+352,2024-11-26,Short Jeans,Lacoste,Marrom,XGG,Estampa grande nas costas,2,382.99,765.98,ETQ352
+353,2024-06-08,Tênis,Element,Vermelho,44,Estampa pequena na frente e grande atrás,5,339.99,1699.95,ETQ353
+354,2024-08-03,Chinelo,Sem Marca,Azul Marinho,42,Estampa pequena na frente e grande atrás,1,59.99,59.99,ETQ354
+355,2024-04-13,Camisa Manga Curta,Hurley,Azul Claro,M,Estampa grande nas costas,5,269.99,1349.95,ETQ355
+356,2024-11-01,Bermuda de Sarja,Sem Marca,Marrom,XGG,Estampa grande na frente,2,160.99,321.98,ETQ356
+357,2024-06-11,Calça Jeans,Sem Marca,Azul Claro,44,Estampa grande na frente,2,195.99,391.98,ETQ357
+358,2024-03-20,Short Jeans,Puma,Marrom,40,Estampa grande nas costas,1,389.99,389.99,ETQ358
+359,2024-11-28,Short Moletom,Reserva,Branco,GG,Estampa pequena na frente,5,312.99,1564.95,ETQ359
+360,2024-12-22,Short Jeans,Hurley,Azul Marinho,XGG,Estampa pequena na frente,4,359.99,1439.96,ETQ360
+361,2024-05-27,Bermuda de Sarja,Element,Cinza,G,Estampa grande na frente,4,27.99,111.96,ETQ361
+362,2024-04-21,Short Moletom,Nike,Cinza,M,Estampa pequena na frente e grande atrás,1,225.99,225.99,ETQ362
+363,2024-02-16,Short Jeans,Puma,Vermelho,M,Estampa pequena na frente,4,277.99,1111.96,ETQ363
+364,2024-05-04,Calça Jeans,Nike,Vermelho,XGG,Estampa pequena na frente,3,350.99,1052.97,ETQ364
+365,2024-07-20,Calça Moletom,Reserva,Bege,P,Estampa pequena na frente e grande atrás,1,360.99,360.99,ETQ365
+366,2024-06-12,Moletom com Capuz,Nike,Azul Claro,M,Estampa grande na frente,5,88.99,444.95,ETQ366
+367,2024-07-24,Chinelo,Reserva,Cinza,G,Estampa pequena na frente e grande atrás,3,194.99,584.97,ETQ367
+368,2024-11-17,Calça Jeans,Vans,Marrom,44,Estampa grande nas costas,5,83.99,419.95,ETQ368
+369,2024-04-30,Camiseta Polo,Puma,Preto,M,Estampa pequena na frente e grande atrás,3,261.99,785.97,ETQ369
+370,2024-12-14,Jaqueta,Hurley,Marrom,XGG,Estampa pequena na frente e grande atrás,2,344.99,689.98,ETQ370
+371,2024-11-23,Calça Jeans,Puma,Vermelho,XG,Estampa pequena na frente e grande atrás,3,193.99,581.97,ETQ371
+372,2024-05-10,Tênis,Tommy Hilfiger,Verde,40,Estampa pequena na frente,5,294.99,1474.95,ETQ372
+373,2024-12-15,Camiseta Polo,Quiksilver,Marrom,XG,Estampa pequena na frente,5,67.99,339.95,ETQ373
+374,2024-11-20,Camisa Regata,Vans,Vermelho,XGG,Estampa pequena na frente,5,371.99,1859.95,ETQ374
+375,2024-06-10,Calça Moletom,Nike,Cinza,GG,Estampa pequena na frente e grande atrás,3,394.99,1184.97,ETQ375
+376,2024-12-25,Moletom com Capuz,Element,Vermelho,40,Sem estampa,4,332.99,1331.96,ETQ376
+377,2024-12-13,Camisa Manga Longa,Puma,Azul Marinho,40,Sem estampa,5,22.99,114.95,ETQ377
+378,2024-11-22,Bermuda de Sarja,Quiksilver,Cinza,XGG,Estampa grande nas costas,1,293.99,293.99,ETQ378
+379,2024-02-08,Short Jeans,Nike,Bege,40,Estampa pequena na frente e grande atrás,1,294.99,294.99,ETQ379
+380,2024-09-10,Camisa Regata,Puma,Cinza,XG,Sem estampa,2,30.99,61.98,ETQ380
+381,2024-08-14,Short Jeans,Hurley,Marrom,XG,Sem estampa,5,375.99,1879.95,ETQ381
+382,2024-10-29,Moletom com Capuz,Quiksilver,Verde,XG,Estampa grande na frente,3,275.99,827.97,ETQ382
+383,2024-11-28,Camisa Regata,Sem Marca,Vermelho,XGG,Estampa grande na frente,3,195.99,587.97,ETQ383
+384,2024-04-06,Camisa Manga Curta,Nike,Cinza,M,Estampa grande na frente,2,66.99,133.98,ETQ384
+385,2024-02-11,Short Jeans,Adidas,Marrom,44,Estampa pequena na frente,1,397.99,397.99,ETQ385
+386,2024-08-16,Short Jeans,Reserva,Bege,XG,Estampa grande na frente,1,327.99,327.99,ETQ386
+387,2024-03-31,Bermuda de Sarja,Adidas,Preto,44,Estampa grande nas costas,4,162.99,651.96,ETQ387
+388,2024-12-11,Camisa Regata,Element,Vermelho,40,Estampa pequena na frente e grande atrás,3,197.99,593.97,ETQ388
+389,2024-10-06,Camisa Manga Longa,Puma,Verde,42,Estampa pequena na frente e grande atrás,2,34.99,69.98,ETQ389
+390,2024-01-22,Moletom com Capuz,Quiksilver,Preto,42,Sem estampa,4,175.99,703.96,ETQ390
+391,2024-03-08,Short Jeans,Puma,Azul Marinho,P,Estampa pequena na frente,4,346.99,1387.96,ETQ391
+392,2024-11-25,Moletom com Capuz,Element,Azul Marinho,P,Estampa grande nas costas,2,392.99,785.98,ETQ392
+393,2024-06-21,Camiseta Polo,Vans,Azul Marinho,GG,Estampa grande nas costas,2,309.99,619.98,ETQ393
+394,2024-03-16,Tênis,Oakley,Verde,XGG,Estampa pequena na frente,4,48.99,195.96,ETQ394
+395,2024-06-09,Tênis,Puma,Marrom,XGG,Estampa pequena na frente e grande atrás,1,165.99,165.99,ETQ395
+396,2024-06-06,Short Moletom,Adidas,Preto,P,Estampa grande nas costas,4,379.99,1519.96,ETQ396
+397,2024-12-17,Short Jeans,Calvin Klein,Vermelho,40,Sem estampa,2,198.99,397.98,ETQ397
+398,2024-04-26,Short Jeans,Quiksilver,Branco,44,Estampa pequena na frente e grande atrás,3,391.99,1175.97,ETQ398
+399,2024-08-30,Chinelo,Adidas,Marrom,M,Estampa pequena na frente e grande atrás,1,368.99,368.99,ETQ399
+400,2024-12-21,Chinelo,Oakley,Azul Marinho,M,Estampa pequena na frente e grande atrás,3,364.99,1094.97,ETQ400
+401,2024-08-31,Jaqueta,Lacoste,Cinza,GG,Estampa grande na frente,3,89.99,269.97,ETQ401
+402,2024-05-19,Jaqueta,Adidas,Verde,40,Estampa pequena na frente e grande atrás,1,260.99,260.99,ETQ402
+403,2024-03-26,Short Jeans,Tommy Hilfiger,Bege,P,Estampa grande na frente,4,86.99,347.96,ETQ403
+404,2024-03-28,Camisa Manga Curta,Hurley,Azul Claro,XGG,Sem estampa,1,346.99,346.99,ETQ404
+405,2024-06-06,Camisa Manga Longa,Nike,Marrom,GG,Estampa grande nas costas,3,137.99,413.97,ETQ405
+406,2024-12-24,Calça Jeans,Calvin Klein,Branco,40,Sem estampa,1,24.99,24.99,ETQ406
+407,2024-04-05,Calça Moletom,Sem Marca,Cinza,XGG,Sem estampa,3,62.99,188.97,ETQ407
+408,2024-08-14,Calça Jeans,Vans,Cinza,P,Sem estampa,5,125.99,629.9499999999999,ETQ408
+409,2024-06-12,Tênis,Reserva,Verde,GG,Estampa grande na frente,2,92.99,185.98,ETQ409
+410,2024-01-01,Tênis,Oakley,Azul Marinho,GG,Estampa pequena na frente e grande atrás,5,201.99,1009.95,ETQ410
+411,2024-01-12,Chinelo,Adidas,Cinza,GG,Estampa grande nas costas,1,141.99,141.99,ETQ411
+412,2024-03-04,Calça Jeans,Vans,Cinza,42,Estampa pequena na frente,1,142.99,142.99,ETQ412
+413,2024-07-26,Camisa Manga Curta,Calvin Klein,Marrom,GG,Estampa grande nas costas,5,22.99,114.95,ETQ413
+414,2024-12-29,Jaqueta,Tommy Hilfiger,Preto,44,Estampa grande nas costas,1,142.99,142.99,ETQ414
+415,2024-06-05,Calça Jeans,Vans,Verde,P,Sem estampa,1,53.99,53.99,ETQ415
+416,2024-12-14,Bermuda de Sarja,Tommy Hilfiger,Branco,GG,Estampa pequena na frente,3,394.99,1184.97,ETQ416
+417,2024-02-04,Camiseta Polo,Lacoste,Preto,GG,Sem estampa,1,187.99,187.99,ETQ417
+418,2024-04-07,Camisa Manga Curta,Tommy Hilfiger,Marrom,M,Estampa grande nas costas,3,128.99,386.97,ETQ418
+419,2024-12-23,Camisa Manga Curta,Reserva,Vermelho,G,Estampa grande nas costas,3,20.99,62.97,ETQ419
+420,2024-09-03,Camiseta Polo,Calvin Klein,Bege,M,Estampa grande nas costas,3,281.99,845.97,ETQ420
+421,2024-01-13,Tênis,Element,Preto,XG,Estampa pequena na frente e grande atrás,2,35.99,71.98,ETQ421
+422,2024-10-02,Tênis,Hurley,Marrom,P,Estampa grande na frente,2,72.99,145.98,ETQ422
+423,2024-05-22,Short Moletom,Adidas,Branco,40,Estampa pequena na frente e grande atrás,3,255.99,767.97,ETQ423
+424,2024-11-21,Bermuda de Sarja,Oakley,Cinza,42,Estampa pequena na frente,5,355.99,1779.95,ETQ424
+425,2024-06-12,Jaqueta,Calvin Klein,Branco,42,Estampa grande nas costas,4,377.99,1511.96,ETQ425
+426,2024-12-21,Moletom com Capuz,Oakley,Azul Claro,XG,Sem estampa,2,160.99,321.98,ETQ426
+427,2024-09-07,Camisa Manga Curta,Calvin Klein,Bege,44,Estampa pequena na frente,1,60.99,60.99,ETQ427
+428,2024-06-05,Jaqueta,Adidas,Branco,42,Estampa grande na frente,5,268.99,1344.95,ETQ428
+429,2024-03-10,Camisa Regata,Vans,Azul Claro,M,Estampa grande na frente,3,105.99,317.97,ETQ429
+430,2024-11-22,Calça Moletom,Puma,Verde,G,Estampa pequena na frente,2,346.99,693.98,ETQ430
+431,2024-06-11,Moletom com Capuz,Tommy Hilfiger,Branco,M,Sem estampa,1,194.99,194.99,ETQ431
+432,2024-11-16,Calça Moletom,Puma,Verde,XGG,Estampa grande na frente,1,368.99,368.99,ETQ432
+433,2024-04-30,Jaqueta,Sem Marca,Vermelho,40,Estampa grande na frente,4,372.99,1491.96,ETQ433
+434,2024-11-26,Chinelo,Tommy Hilfiger,Verde,P,Estampa grande na frente,4,41.99,167.96,ETQ434
+435,2024-05-20,Camisa Manga Curta,Nike,Branco,G,Estampa pequena na frente,5,313.99,1569.95,ETQ435
+436,2024-06-08,Camisa Manga Longa,Quiksilver,Vermelho,XG,Estampa grande nas costas,1,217.99,217.99,ETQ436
+437,2024-06-01,Bermuda de Sarja,Oakley,Verde,P,Sem estampa,3,376.99,1130.97,ETQ437
+438,2024-12-22,Calça Moletom,Element,Branco,42,Estampa pequena na frente e grande atrás,5,279.99,1399.95,ETQ438
+439,2024-12-13,Camiseta Polo,Quiksilver,Azul Marinho,42,Estampa pequena na frente e grande atrás,5,265.99,1329.95,ETQ439
+440,2024-08-18,Short Moletom,Reserva,Cinza,XG,Estampa pequena na frente e grande atrás,4,284.99,1139.96,ETQ440
+441,2024-10-11,Short Moletom,Element,Vermelho,XGG,Sem estampa,1,279.99,279.99,ETQ441
+442,2024-06-09,Camiseta Polo,Sem Marca,Azul Marinho,XGG,Estampa pequena na frente e grande atrás,3,31.99,95.97,ETQ442
+443,2024-12-25,Short Moletom,Oakley,Azul Marinho,44,Estampa pequena na frente e grande atrás,2,277.99,555.98,ETQ443
+444,2024-06-08,Chinelo,Oakley,Azul Claro,M,Estampa pequena na frente,1,43.99,43.99,ETQ444
+445,2024-12-15,Bermuda de Sarja,Adidas,Verde,40,Estampa pequena na frente e grande atrás,1,194.99,194.99,ETQ445
+446,2024-07-20,Calça Jeans,Quiksilver,Bege,GG,Estampa pequena na frente e grande atrás,1,105.99,105.99,ETQ446
+447,2024-04-04,Camisa Manga Longa,Nike,Marrom,XGG,Estampa grande na frente,1,380.99,380.99,ETQ447
+448,2024-06-04,Short Moletom,Element,Marrom,G,Estampa pequena na frente e grande atrás,5,303.99,1519.95,ETQ448
+449,2024-11-13,Short Moletom,Nike,Azul Marinho,XG,Estampa pequena na frente e grande atrás,1,93.99,93.99,ETQ449
+450,2024-07-22,Jaqueta,Hurley,Cinza,M,Estampa pequena na frente,3,160.99,482.97,ETQ450
+451,2024-10-29,Camisa Manga Curta,Quiksilver,Branco,XGG,Estampa grande na frente,5,367.99,1839.95,ETQ451
+452,2024-12-19,Calça Moletom,Nike,Branco,40,Estampa pequena na frente,5,83.99,419.95,ETQ452
+453,2024-02-23,Jaqueta,Puma,Azul Marinho,P,Estampa grande nas costas,5,239.99,1199.95,ETQ453
+454,2024-12-02,Bermuda de Sarja,Reserva,Azul Marinho,XGG,Estampa pequena na frente,2,216.99,433.98,ETQ454
+455,2024-12-10,Calça Jeans,Hurley,Verde,42,Estampa grande nas costas,5,265.99,1329.95,ETQ455
+456,2024-09-24,Calça Moletom,Lacoste,Verde,42,Estampa pequena na frente,4,397.99,1591.96,ETQ456
+457,2024-06-06,Camiseta Polo,Oakley,Azul Claro,G,Estampa pequena na frente,2,114.99,229.98,ETQ457
+458,2024-06-30,Camiseta Polo,Vans,Marrom,40,Estampa grande na frente,1,348.99,348.99,ETQ458
+459,2024-12-26,Camisa Manga Curta,Tommy Hilfiger,Verde,GG,Estampa grande na frente,4,391.99,1567.96,ETQ459
+460,2024-09-04,Chinelo,Hurley,Azul Marinho,GG,Estampa grande nas costas,1,227.99,227.99,ETQ460
+461,2024-05-23,Tênis,Oakley,Vermelho,M,Estampa pequena na frente e grande atrás,2,126.99,253.98,ETQ461
+462,2024-06-20,Tênis,Puma,Marrom,40,Estampa grande na frente,2,166.99,333.98,ETQ462
+463,2024-01-10,Bermuda de Sarja,Puma,Bege,XGG,Estampa pequena na frente e grande atrás,1,42.99,42.99,ETQ463
+464,2024-08-10,Jaqueta,Sem Marca,Bege,40,Estampa grande nas costas,4,156.99,627.96,ETQ464
+465,2024-12-26,Calça Jeans,Nike,Bege,P,Estampa pequena na frente,4,327.99,1311.96,ETQ465
+466,2024-07-22,Camisa Manga Curta,Quiksilver,Cinza,XG,Sem estampa,3,316.99,950.97,ETQ466
+467,2024-06-26,Bermuda de Sarja,Sem Marca,Branco,GG,Sem estampa,5,126.99,634.9499999999999,ETQ467
+468,2024-12-12,Chinelo,Puma,Marrom,GG,Estampa pequena na frente,2,79.99,159.98,ETQ468
+469,2024-11-28,Bermuda de Sarja,Tommy Hilfiger,Branco,P,Estampa pequena na frente e grande atrás,1,153.99,153.99,ETQ469
+470,2024-01-07,Camiseta Polo,Lacoste,Vermelho,P,Estampa grande na frente,3,349.99,1049.97,ETQ470
+471,2024-12-15,Camisa Manga Curta,Quiksilver,Bege,P,Estampa pequena na frente,5,326.99,1634.95,ETQ471
+472,2024-07-12,Camiseta Polo,Nike,Bege,44,Sem estampa,5,383.99,1919.95,ETQ472
+473,2024-08-29,Camisa Manga Longa,Vans,Branco,G,Estampa pequena na frente,2,22.99,45.98,ETQ473
+474,2024-06-25,Jaqueta,Element,Verde,M,Estampa grande nas costas,3,114.99,344.97,ETQ474
+475,2024-06-06,Tênis,Reserva,Azul Claro,40,Sem estampa,4,121.99,487.96,ETQ475
+476,2024-03-21,Chinelo,Calvin Klein,Azul Claro,44,Sem estampa,1,137.99,137.99,ETQ476
+477,2024-11-27,Short Jeans,Element,Cinza,XG,Sem estampa,1,361.99,361.99,ETQ477
+478,2024-12-16,Camisa Manga Curta,Reserva,Verde,G,Estampa grande nas costas,3,330.99,992.97,ETQ478
+479,2024-05-15,Calça Jeans,Lacoste,Azul Claro,GG,Sem estampa,5,109.99,549.9499999999999,ETQ479
+480,2024-12-24,Moletom com Capuz,Adidas,Branco,M,Estampa grande na frente,1,49.99,49.99,ETQ480
+481,2024-02-19,Bermuda de Sarja,Lacoste,Branco,M,Estampa grande nas costas,3,253.99,761.97,ETQ481
+482,2024-07-21,Camiseta Polo,Sem Marca,Vermelho,XGG,Estampa grande na frente,1,106.99,106.99,ETQ482
+483,2024-11-24,Calça Jeans,Sem Marca,Azul Claro,M,Estampa grande nas costas,4,246.99,987.96,ETQ483
+484,2024-01-13,Calça Moletom,Reserva,Azul Marinho,40,Sem estampa,1,39.99,39.99,ETQ484
+485,2024-08-13,Jaqueta,Hurley,Vermelho,40,Estampa pequena na frente,2,159.99,319.98,ETQ485
+486,2024-07-14,Jaqueta,Vans,Vermelho,40,Estampa grande na frente,4,168.99,675.96,ETQ486
+487,2024-11-22,Camisa Regata,Adidas,Bege,P,Estampa pequena na frente,1,310.99,310.99,ETQ487
+488,2024-02-25,Camisa Manga Curta,Quiksilver,Bege,42,Estampa pequena na frente,1,192.99,192.99,ETQ488
+489,2024-06-03,Moletom com Capuz,Vans,Branco,G,Estampa pequena na frente,1,365.99,365.99,ETQ489
+490,2024-12-20,Calça Jeans,Oakley,Branco,40,Estampa pequena na frente e grande atrás,1,349.99,349.99,ETQ490
+491,2024-07-31,Camisa Regata,Oakley,Azul Claro,XGG,Estampa grande na frente,5,314.99,1574.95,ETQ491
+492,2024-02-09,Calça Moletom,Element,Bege,44,Estampa pequena na frente e grande atrás,5,60.99,304.95,ETQ492
+493,2024-02-03,Moletom com Capuz,Quiksilver,Cinza,G,Sem estampa,3,209.99,629.97,ETQ493
+494,2024-12-20,Camisa Manga Longa,Vans,Azul Marinho,GG,Estampa pequena na frente,1,212.99,212.99,ETQ494
+495,2024-04-11,Jaqueta,Quiksilver,Azul Claro,G,Estampa grande nas costas,1,209.99,209.99,ETQ495
+496,2024-06-07,Calça Jeans,Calvin Klein,Marrom,42,Estampa grande nas costas,2,82.99,165.98,ETQ496
+497,2024-03-07,Moletom com Capuz,Nike,Azul Marinho,40,Estampa grande na frente,3,57.99,173.97,ETQ497
+498,2024-11-26,Short Jeans,Sem Marca,Cinza,GG,Estampa pequena na frente,2,309.99,619.98,ETQ498
+499,2024-05-06,Calça Jeans,Element,Preto,44,Sem estampa,3,286.99,860.97,ETQ499
+500,2024-06-09,Camisa Regata,Element,Azul Marinho,40,Estampa grande nas costas,2,323.99,647.98,ETQ500
+501,2024-02-20,Calça Jeans,Calvin Klein,Cinza,P,Estampa pequena na frente e grande atrás,1,113.99,113.99,ETQ501
+502,2024-07-14,Tênis,Nike,Preto,40,Sem estampa,4,77.99,311.96,ETQ502
+503,2024-11-07,Bermuda de Sarja,Reserva,Bege,42,Estampa pequena na frente e grande atrás,4,396.99,1587.96,ETQ503
+504,2024-08-09,Jaqueta,Nike,Marrom,P,Estampa grande nas costas,3,310.99,932.97,ETQ504
+505,2024-12-18,Camisa Regata,Vans,Branco,44,Estampa pequena na frente,2,199.99,399.98,ETQ505
+506,2024-03-07,Calça Moletom,Hurley,Preto,XGG,Sem estampa,1,327.99,327.99,ETQ506
+507,2024-10-12,Short Moletom,Quiksilver,Cinza,GG,Estampa grande na frente,2,300.99,601.98,ETQ507
+508,2024-11-26,Calça Jeans,Vans,Cinza,G,Estampa pequena na frente e grande atrás,4,254.99,1019.96,ETQ508
+509,2024-08-29,Short Jeans,Tommy Hilfiger,Azul Marinho,G,Estampa pequena na frente,2,373.99,747.98,ETQ509
+510,2024-09-14,Short Jeans,Quiksilver,Azul Marinho,G,Estampa grande nas costas,2,381.99,763.98,ETQ510
+511,2024-01-03,Camiseta Polo,Nike,Cinza,M,Estampa pequena na frente,2,245.99,491.98,ETQ511
+512,2024-12-18,Calça Jeans,Element,Vermelho,XG,Estampa pequena na frente e grande atrás,2,68.99,137.98,ETQ512
+513,2024-11-20,Calça Jeans,Reserva,Marrom,XG,Estampa grande na frente,4,330.99,1323.96,ETQ513
+514,2024-01-11,Bermuda de Sarja,Adidas,Verde,M,Estampa pequena na frente e grande atrás,2,112.99,225.98,ETQ514
+515,2024-05-11,Camisa Regata,Tommy Hilfiger,Branco,G,Estampa pequena na frente,2,196.99,393.98,ETQ515
+516,2024-11-26,Camisa Manga Longa,Nike,Marrom,44,Estampa pequena na frente e grande atrás,3,242.99,728.97,ETQ516
+517,2024-12-19,Camisa Manga Curta,Oakley,Preto,XGG,Estampa grande nas costas,5,322.99,1614.95,ETQ517
+518,2024-05-03,Camiseta Polo,Sem Marca,Bege,44,Estampa pequena na frente e grande atrás,3,343.99,1031.97,ETQ518
+519,2024-11-17,Camiseta Polo,Vans,Bege,XG,Estampa grande nas costas,2,358.99,717.98,ETQ519
+520,2024-10-11,Short Jeans,Reserva,Azul Marinho,G,Sem estampa,2,214.99,429.98,ETQ520
+521,2024-10-13,Camisa Manga Longa,Reserva,Branco,XG,Sem estampa,5,393.99,1969.95,ETQ521
+522,2024-12-16,Bermuda de Sarja,Element,Branco,42,Estampa grande nas costas,4,199.99,799.96,ETQ522
+523,2024-09-05,Short Jeans,Element,Branco,44,Estampa grande nas costas,3,152.99,458.97,ETQ523
+524,2024-05-16,Camisa Regata,Adidas,Bege,M,Estampa pequena na frente,1,105.99,105.99,ETQ524
+525,2024-11-24,Short Moletom,Puma,Vermelho,M,Sem estampa,1,383.99,383.99,ETQ525
+526,2024-06-02,Camiseta Polo,Sem Marca,Verde,40,Estampa pequena na frente,5,204.99,1024.95,ETQ526
+527,2024-09-15,Camisa Manga Longa,Nike,Branco,XGG,Estampa grande nas costas,5,207.99,1039.95,ETQ527
+528,2024-06-06,Camisa Regata,Oakley,Azul Claro,XG,Estampa grande na frente,3,329.99,989.97,ETQ528
+529,2024-11-16,Camisa Manga Longa,Lacoste,Preto,GG,Estampa pequena na frente,1,84.99,84.99,ETQ529
+530,2024-08-10,Chinelo,Quiksilver,Cinza,P,Estampa grande na frente,1,224.99,224.99,ETQ530
+531,2024-01-14,Chinelo,Adidas,Preto,M,Sem estampa,4,227.99,911.96,ETQ531
+532,2024-01-14,Camisa Manga Curta,Element,Marrom,XGG,Sem estampa,4,207.99,831.96,ETQ532
+533,2024-07-01,Camisa Manga Longa,Element,Marrom,GG,Sem estampa,2,311.99,623.98,ETQ533
+534,2024-12-24,Chinelo,Reserva,Azul Claro,44,Estampa grande nas costas,5,336.99,1684.95,ETQ534
+535,2024-09-06,Camisa Regata,Oakley,Cinza,GG,Estampa pequena na frente e grande atrás,2,179.99,359.98,ETQ535
+536,2024-09-16,Chinelo,Sem Marca,Preto,XGG,Estampa pequena na frente e grande atrás,5,110.99,554.9499999999999,ETQ536
+537,2024-08-30,Jaqueta,Nike,Azul Claro,XGG,Estampa pequena na frente e grande atrás,4,73.99,295.96,ETQ537
+538,2024-01-03,Calça Moletom,Quiksilver,Branco,XGG,Estampa pequena na frente e grande atrás,1,335.99,335.99,ETQ538
+539,2024-11-21,Camisa Manga Curta,Hurley,Vermelho,M,Estampa pequena na frente e grande atrás,2,334.99,669.98,ETQ539
+540,2024-04-20,Jaqueta,Puma,Verde,GG,Estampa grande nas costas,4,62.99,251.96,ETQ540
+541,2024-02-22,Tênis,Tommy Hilfiger,Verde,G,Sem estampa,5,57.99,289.95,ETQ541
+542,2024-04-26,Camisa Manga Longa,Calvin Klein,Verde,44,Sem estampa,1,295.99,295.99,ETQ542
+543,2024-10-24,Jaqueta,Vans,Vermelho,G,Estampa pequena na frente,5,207.99,1039.95,ETQ543
+544,2024-06-12,Camisa Manga Curta,Nike,Azul Marinho,XG,Sem estampa,2,181.99,363.98,ETQ544
+545,2024-07-22,Short Moletom,Quiksilver,Branco,44,Estampa grande nas costas,1,30.99,30.99,ETQ545
+546,2024-05-28,Chinelo,Nike,Azul Marinho,P,Sem estampa,1,117.99,117.99,ETQ546
+547,2024-06-08,Camiseta Polo,Hurley,Preto,XGG,Estampa grande nas costas,1,338.99,338.99,ETQ547
+548,2024-06-29,Camisa Manga Curta,Tommy Hilfiger,Verde,GG,Estampa grande na frente,2,298.99,597.98,ETQ548
+549,2024-03-18,Short Moletom,Vans,Bege,44,Estampa grande na frente,4,216.99,867.96,ETQ549
+550,2024-04-24,Jaqueta,Nike,Preto,40,Estampa grande na frente,2,242.99,485.98,ETQ550
+551,2024-07-27,Bermuda de Sarja,Sem Marca,Azul Marinho,GG,Estampa pequena na frente e grande atrás,1,390.99,390.99,ETQ551
+552,2024-05-30,Tênis,Calvin Klein,Verde,G,Sem estampa,3,328.99,986.97,ETQ552
+553,2024-09-01,Calça Moletom,Oakley,Azul Marinho,44,Estampa grande nas costas,4,265.99,1063.96,ETQ553
+554,2024-06-22,Calça Moletom,Lacoste,Cinza,XGG,Estampa pequena na frente,3,328.99,986.97,ETQ554
+555,2024-12-14,Calça Moletom,Reserva,Branco,40,Estampa grande na frente,5,124.99,624.9499999999999,ETQ555
+556,2024-02-25,Bermuda de Sarja,Reserva,Cinza,GG,Sem estampa,4,161.99,647.96,ETQ556
+557,2024-04-05,Jaqueta,Quiksilver,Preto,M,Estampa pequena na frente,3,197.99,593.97,ETQ557
+558,2024-12-14,Short Moletom,Lacoste,Bege,XG,Sem estampa,1,392.99,392.99,ETQ558
+559,2024-12-13,Camisa Manga Curta,Lacoste,Preto,P,Sem estampa,4,166.99,667.96,ETQ559
+560,2024-08-04,Short Moletom,Vans,Verde,G,Estampa grande nas costas,2,169.99,339.98,ETQ560
+561,2024-11-20,Camisa Regata,Quiksilver,Branco,XGG,Estampa pequena na frente,2,141.99,283.98,ETQ561
+562,2024-11-18,Bermuda de Sarja,Quiksilver,Verde,XGG,Estampa grande na frente,5,250.99,1254.95,ETQ562
+563,2024-05-17,Calça Moletom,Vans,Marrom,XGG,Estampa pequena na frente,2,105.99,211.98,ETQ563
+564,2024-12-19,Calça Moletom,Hurley,Verde,44,Sem estampa,3,239.99,719.97,ETQ564
+565,2024-07-14,Camiseta Polo,Reserva,Azul Marinho,GG,Estampa grande na frente,3,241.99,725.97,ETQ565
+566,2024-12-21,Camisa Regata,Calvin Klein,Azul Claro,P,Estampa grande na frente,4,90.99,363.96,ETQ566
+567,2024-11-29,Calça Jeans,Element,Branco,42,Estampa pequena na frente,4,256.99,1027.96,ETQ567
+568,2024-08-03,Bermuda de Sarja,Vans,Vermelho,XGG,Estampa grande nas costas,3,381.99,1145.97,ETQ568
+569,2024-02-11,Camisa Manga Curta,Sem Marca,Cinza,40,Sem estampa,4,139.99,559.96,ETQ569
+570,2024-12-11,Moletom com Capuz,Lacoste,Bege,XGG,Estampa pequena na frente e grande atrás,4,377.99,1511.96,ETQ570
+571,2024-04-07,Calça Moletom,Vans,Bege,42,Estampa pequena na frente e grande atrás,1,156.99,156.99,ETQ571
+572,2024-02-27,Camisa Regata,Hurley,Azul Marinho,G,Estampa grande na frente,2,318.99,637.98,ETQ572
+573,2024-08-07,Short Moletom,Adidas,Cinza,G,Estampa pequena na frente e grande atrás,3,160.99,482.97,ETQ573
+574,2024-12-10,Moletom com Capuz,Tommy Hilfiger,Cinza,GG,Estampa pequena na frente,4,235.99,943.96,ETQ574
+575,2024-12-23,Camiseta Polo,Element,Vermelho,G,Estampa grande nas costas,2,287.99,575.98,ETQ575
+576,2024-06-28,Camisa Regata,Nike,Preto,M,Estampa pequena na frente,4,21.99,87.96,ETQ576
+577,2024-06-25,Camisa Manga Curta,Lacoste,Azul Marinho,P,Estampa pequena na frente e grande atrás,1,153.99,153.99,ETQ577
+578,2024-12-23,Jaqueta,Quiksilver,Preto,P,Sem estampa,5,240.99,1204.95,ETQ578
+579,2024-04-26,Moletom com Capuz,Sem Marca,Marrom,GG,Estampa pequena na frente,1,394.99,394.99,ETQ579
+580,2024-06-13,Short Moletom,Hurley,Preto,XG,Estampa grande na frente,1,245.99,245.99,ETQ580
+581,2024-02-05,Calça Jeans,Quiksilver,Bege,XGG,Estampa grande na frente,5,224.99,1124.95,ETQ581
+582,2024-12-14,Tênis,Sem Marca,Azul Marinho,44,Estampa pequena na frente e grande atrás,5,96.99,484.95,ETQ582
+583,2024-06-02,Chinelo,Adidas,Azul Claro,42,Estampa pequena na frente e grande atrás,5,338.99,1694.95,ETQ583
+584,2024-06-08,Camisa Manga Curta,Puma,Cinza,P,Estampa pequena na frente,3,236.99,710.97,ETQ584
+585,2024-06-02,Camisa Manga Longa,Element,Vermelho,42,Estampa pequena na frente e grande atrás,5,370.99,1854.95,ETQ585
+586,2024-11-18,Camisa Regata,Puma,Marrom,XG,Estampa grande nas costas,1,44.99,44.99,ETQ586
+587,2024-07-01,Calça Jeans,Calvin Klein,Marrom,M,Estampa pequena na frente e grande atrás,2,160.99,321.98,ETQ587
+588,2024-09-30,Calça Jeans,Adidas,Azul Claro,XG,Estampa pequena na frente,1,382.99,382.99,ETQ588
+589,2024-02-03,Calça Jeans,Sem Marca,Marrom,P,Estampa pequena na frente,3,22.99,68.97,ETQ589
+590,2024-11-06,Camiseta Polo,Oakley,Verde,G,Sem estampa,4,225.99,903.96,ETQ590
+591,2024-12-08,Calça Moletom,Oakley,Bege,M,Estampa grande na frente,1,132.99,132.99,ETQ591
+592,2024-03-01,Short Moletom,Element,Marrom,XG,Estampa pequena na frente,3,216.99,650.97,ETQ592
+593,2024-01-10,Tênis,Reserva,Preto,P,Estampa pequena na frente e grande atrás,1,159.99,159.99,ETQ593
+594,2024-07-04,Camisa Manga Longa,Quiksilver,Vermelho,M,Estampa pequena na frente,2,274.99,549.98,ETQ594
+595,2024-12-07,Camisa Regata,Adidas,Vermelho,GG,Estampa grande nas costas,1,232.99,232.99,ETQ595
+596,2024-09-27,Camisa Manga Curta,Tommy Hilfiger,Verde,M,Estampa pequena na frente e grande atrás,3,105.99,317.97,ETQ596
+597,2024-04-23,Short Jeans,Puma,Marrom,40,Estampa pequena na frente,3,202.99,608.97,ETQ597
+598,2024-04-14,Calça Moletom,Reserva,Verde,P,Estampa pequena na frente,2,348.99,697.98,ETQ598
+599,2024-03-13,Camisa Regata,Nike,Verde,XGG,Estampa grande nas costas,2,74.99,149.98,ETQ599
+600,2024-04-18,Short Jeans,Puma,Azul Claro,42,Estampa pequena na frente e grande atrás,4,371.99,1487.96,ETQ600
+601,2024-06-09,Calça Jeans,Adidas,Cinza,P,Estampa pequena na frente,3,23.99,71.97,ETQ601
+602,2024-12-14,Jaqueta,Hurley,Bege,44,Estampa pequena na frente e grande atrás,2,230.99,461.98,ETQ602
+603,2024-04-18,Tênis,Tommy Hilfiger,Vermelho,XGG,Sem estampa,1,275.99,275.99,ETQ603
+604,2024-05-16,Bermuda de Sarja,Tommy Hilfiger,Preto,G,Estampa pequena na frente e grande atrás,2,392.99,785.98,ETQ604
+605,2024-07-04,Moletom com Capuz,Calvin Klein,Bege,GG,Estampa pequena na frente,5,98.99,494.95,ETQ605
+606,2024-03-02,Camisa Regata,Quiksilver,Cinza,44,Sem estampa,5,98.99,494.95,ETQ606
+607,2024-06-23,Camisa Regata,Oakley,Preto,XG,Estampa grande na frente,3,77.99,233.97,ETQ607
+608,2024-06-13,Moletom com Capuz,Nike,Preto,40,Estampa grande nas costas,3,23.99,71.97,ETQ608
+609,2024-06-04,Camisa Manga Curta,Reserva,Bege,44,Estampa grande na frente,2,164.99,329.98,ETQ609
+610,2024-01-12,Jaqueta,Adidas,Azul Marinho,G,Sem estampa,4,397.99,1591.96,ETQ610
+611,2024-06-01,Short Jeans,Calvin Klein,Cinza,XG,Estampa grande na frente,5,95.99,479.95,ETQ611
+612,2024-04-28,Moletom com Capuz,Calvin Klein,Azul Marinho,GG,Estampa grande nas costas,2,339.99,679.98,ETQ612
+613,2024-03-26,Short Moletom,Adidas,Azul Claro,P,Estampa pequena na frente,5,217.99,1089.95,ETQ613
+614,2024-11-11,Tênis,Adidas,Vermelho,P,Estampa pequena na frente e grande atrás,5,73.99,369.95,ETQ614
+615,2024-04-07,Bermuda de Sarja,Nike,Preto,GG,Estampa grande na frente,1,306.99,306.99,ETQ615
+616,2024-08-02,Jaqueta,Puma,Vermelho,M,Sem estampa,2,199.99,399.98,ETQ616
+617,2024-01-07,Camisa Manga Curta,Puma,Azul Marinho,M,Estampa grande na frente,4,183.99,735.96,ETQ617
+618,2024-03-04,Calça Jeans,Tommy Hilfiger,Preto,40,Estampa pequena na frente,5,332.99,1664.95,ETQ618
+619,2024-11-20,Camisa Manga Curta,Reserva,Preto,P,Estampa pequena na frente,2,334.99,669.98,ETQ619
+620,2024-10-31,Tênis,Vans,Azul Marinho,40,Estampa pequena na frente,2,245.99,491.98,ETQ620
+621,2024-09-08,Short Moletom,Calvin Klein,Branco,G,Estampa pequena na frente,1,185.99,185.99,ETQ621
+622,2024-12-19,Short Jeans,Oakley,Azul Marinho,XGG,Estampa pequena na frente e grande atrás,4,174.99,699.96,ETQ622
+623,2024-06-01,Chinelo,Reserva,Azul Claro,42,Estampa grande na frente,5,320.99,1604.95,ETQ623
+624,2024-08-20,Camiseta Polo,Sem Marca,Verde,G,Sem estampa,3,208.99,626.97,ETQ624
+625,2024-07-04,Calça Moletom,Reserva,Azul Claro,XG,Estampa grande nas costas,3,310.99,932.97,ETQ625
+626,2024-06-12,Chinelo,Hurley,Marrom,40,Estampa grande nas costas,3,25.99,77.97,ETQ626
+627,2024-12-30,Bermuda de Sarja,Calvin Klein,Marrom,44,Estampa grande nas costas,5,139.99,699.95,ETQ627
+628,2024-03-16,Calça Jeans,Hurley,Azul Claro,GG,Estampa grande na frente,5,331.99,1659.95,ETQ628
+629,2024-12-12,Short Jeans,Oakley,Vermelho,42,Estampa grande nas costas,2,115.99,231.98,ETQ629
+630,2024-06-04,Calça Moletom,Reserva,Marrom,44,Sem estampa,4,81.99,327.96,ETQ630
+631,2024-09-10,Chinelo,Quiksilver,Verde,44,Sem estampa,4,152.99,611.96,ETQ631
+632,2024-08-09,Chinelo,Hurley,Vermelho,G,Estampa grande nas costas,3,364.99,1094.97,ETQ632
+633,2024-11-28,Tênis,Adidas,Marrom,40,Estampa grande na frente,2,362.99,725.98,ETQ633
+634,2024-06-03,Camiseta Polo,Reserva,Cinza,XG,Estampa pequena na frente,5,153.99,769.95,ETQ634
+635,2024-07-24,Camisa Regata,Element,Vermelho,XG,Estampa pequena na frente,3,176.99,530.97,ETQ635
+636,2024-07-04,Chinelo,Sem Marca,Vermelho,M,Estampa grande na frente,4,74.99,299.96,ETQ636
+637,2024-12-16,Chinelo,Element,Marrom,M,Estampa grande na frente,4,62.99,251.96,ETQ637
+638,2024-08-05,Moletom com Capuz,Adidas,Preto,42,Estampa grande nas costas,5,347.99,1739.95,ETQ638
+639,2024-04-16,Camiseta Polo,Nike,Vermelho,XG,Estampa pequena na frente e grande atrás,3,353.99,1061.97,ETQ639
+640,2024-06-04,Moletom com Capuz,Vans,Azul Marinho,GG,Sem estampa,4,79.99,319.96,ETQ640
+641,2024-11-13,Bermuda de Sarja,Calvin Klein,Verde,G,Estampa grande na frente,1,142.99,142.99,ETQ641
+642,2024-03-20,Camisa Manga Curta,Quiksilver,Bege,G,Estampa grande na frente,2,288.99,577.98,ETQ642
+643,2024-07-14,Tênis,Reserva,Marrom,40,Sem estampa,3,367.99,1103.97,ETQ643
+644,2024-10-16,Camiseta Polo,Adidas,Verde,XG,Estampa pequena na frente e grande atrás,3,381.99,1145.97,ETQ644
+645,2024-11-07,Calça Jeans,Tommy Hilfiger,Verde,42,Estampa grande nas costas,4,360.99,1443.96,ETQ645
+646,2024-02-28,Chinelo,Nike,Bege,G,Estampa grande nas costas,2,32.99,65.98,ETQ646
+647,2024-12-16,Short Moletom,Nike,Branco,P,Sem estampa,4,317.99,1271.96,ETQ647
+648,2024-02-11,Jaqueta,Calvin Klein,Verde,XG,Sem estampa,1,174.99,174.99,ETQ648
+649,2024-10-20,Camisa Regata,Quiksilver,Preto,M,Estampa pequena na frente e grande atrás,5,343.99,1719.95,ETQ649
+650,2024-06-10,Camiseta Polo,Nike,Marrom,40,Estampa grande na frente,1,77.99,77.99,ETQ650
+651,2024-11-20,Camisa Regata,Reserva,Branco,XGG,Estampa pequena na frente,1,152.99,152.99,ETQ651
+652,2024-01-25,Chinelo,Hurley,Marrom,40,Sem estampa,1,378.99,378.99,ETQ652
+653,2024-07-29,Jaqueta,Lacoste,Azul Claro,42,Estampa grande nas costas,1,214.99,214.99,ETQ653
+654,2024-09-22,Bermuda de Sarja,Quiksilver,Azul Claro,M,Estampa pequena na frente e grande atrás,4,375.99,1503.96,ETQ654
+655,2024-10-01,Short Moletom,Puma,Azul Claro,40,Estampa grande nas costas,5,383.99,1919.95,ETQ655
+656,2024-06-11,Calça Jeans,Reserva,Verde,40,Estampa grande na frente,2,232.99,465.98,ETQ656
+657,2024-02-21,Bermuda de Sarja,Hurley,Bege,XGG,Estampa pequena na frente,2,101.99,203.98,ETQ657
+658,2024-05-07,Chinelo,Puma,Marrom,G,Estampa pequena na frente e grande atrás,2,388.99,777.98,ETQ658
+659,2024-11-23,Short Jeans,Quiksilver,Marrom,GG,Estampa pequena na frente e grande atrás,2,125.99,251.98,ETQ659
+660,2024-07-18,Camisa Manga Curta,Lacoste,Azul Claro,40,Estampa pequena na frente,5,206.99,1034.95,ETQ660
+661,2024-06-08,Calça Moletom,Adidas,Preto,XG,Sem estampa,2,226.99,453.98,ETQ661
+662,2024-07-19,Calça Jeans,Tommy Hilfiger,Bege,44,Estampa pequena na frente e grande atrás,1,347.99,347.99,ETQ662
+663,2024-08-20,Tênis,Oakley,Bege,40,Estampa pequena na frente,3,167.99,503.97,ETQ663
+664,2024-08-06,Camiseta Polo,Lacoste,Cinza,G,Estampa pequena na frente e grande atrás,3,130.99,392.97,ETQ664
+665,2024-11-23,Calça Jeans,Sem Marca,Branco,XG,Sem estampa,2,252.99,505.98,ETQ665
+666,2024-05-03,Camisa Regata,Nike,Bege,G,Estampa grande na frente,1,367.99,367.99,ETQ666
+667,2024-11-28,Calça Moletom,Adidas,Verde,40,Estampa grande nas costas,1,393.99,393.99,ETQ667
+668,2024-08-10,Camisa Manga Longa,Element,Preto,G,Estampa grande nas costas,1,71.99,71.99,ETQ668
+669,2024-08-28,Camisa Manga Curta,Oakley,Azul Claro,P,Estampa pequena na frente,3,219.99,659.97,ETQ669
+670,2024-07-12,Bermuda de Sarja,Hurley,Branco,GG,Estampa grande nas costas,4,345.99,1383.96,ETQ670
+671,2024-01-28,Chinelo,Nike,Verde,XGG,Estampa pequena na frente,4,25.99,103.96,ETQ671
+672,2024-10-10,Camiseta Polo,Oakley,Branco,P,Estampa grande nas costas,5,325.99,1629.95,ETQ672
+673,2024-12-25,Camisa Manga Curta,Adidas,Branco,XGG,Sem estampa,1,55.99,55.99,ETQ673
+674,2024-11-25,Camiseta Polo,Quiksilver,Vermelho,P,Estampa pequena na frente e grande atrás,2,320.99,641.98,ETQ674
+675,2024-01-07,Short Moletom,Lacoste,Cinza,GG,Estampa pequena na frente,5,354.99,1774.95,ETQ675
+676,2024-06-19,Camiseta Polo,Reserva,Branco,44,Estampa grande nas costas,4,228.99,915.96,ETQ676
+677,2024-06-11,Chinelo,Puma,Marrom,G,Sem estampa,5,86.99,434.95,ETQ677
+678,2024-12-20,Bermuda de Sarja,Lacoste,Bege,XGG,Estampa pequena na frente,2,302.99,605.98,ETQ678
+679,2024-12-15,Bermuda de Sarja,Hurley,Marrom,M,Estampa grande na frente,1,194.99,194.99,ETQ679
+680,2024-12-10,Tênis,Oakley,Branco,XGG,Estampa pequena na frente,5,286.99,1434.95,ETQ680
+681,2024-04-06,Moletom com Capuz,Vans,Verde,GG,Estampa pequena na frente e grande atrás,4,365.99,1463.96,ETQ681
+682,2024-06-08,Bermuda de Sarja,Element,Marrom,GG,Estampa grande nas costas,4,291.99,1167.96,ETQ682
+683,2024-06-27,Tênis,Adidas,Azul Claro,GG,Estampa grande nas costas,1,279.99,279.99,ETQ683
+684,2024-08-03,Short Jeans,Oakley,Vermelho,42,Sem estampa,1,21.99,21.99,ETQ684
+685,2024-11-04,Camisa Manga Curta,Hurley,Bege,M,Estampa pequena na frente,4,308.99,1235.96,ETQ685
+686,2024-12-16,Calça Jeans,Reserva,Verde,40,Estampa pequena na frente e grande atrás,4,250.99,1003.96,ETQ686
+687,2024-08-12,Camisa Manga Longa,Reserva,Branco,44,Estampa grande nas costas,3,387.99,1163.97,ETQ687
+688,2024-06-06,Chinelo,Reserva,Bege,M,Estampa pequena na frente e grande atrás,2,79.99,159.98,ETQ688
+689,2024-06-01,Bermuda de Sarja,Vans,Bege,XG,Estampa pequena na frente e grande atrás,2,28.99,57.98,ETQ689
+690,2024-10-25,Calça Jeans,Puma,Azul Claro,P,Sem estampa,4,119.99,479.96,ETQ690
+691,2024-01-18,Short Moletom,Sem Marca,Cinza,XGG,Sem estampa,2,87.99,175.98,ETQ691
+692,2024-06-15,Chinelo,Calvin Klein,Marrom,GG,Estampa grande nas costas,4,155.99,623.96,ETQ692
+693,2024-05-10,Camiseta Polo,Nike,Azul Claro,42,Estampa grande nas costas,3,21.99,65.97,ETQ693
+694,2024-07-09,Jaqueta,Puma,Bege,XG,Estampa pequena na frente e grande atrás,4,321.99,1287.96,ETQ694
+695,2024-08-02,Chinelo,Tommy Hilfiger,Cinza,GG,Estampa grande na frente,2,372.99,745.98,ETQ695
+696,2024-12-21,Chinelo,Oakley,Verde,G,Sem estampa,5,272.99,1364.95,ETQ696
+697,2024-01-02,Tênis,Sem Marca,Marrom,42,Estampa grande nas costas,4,24.99,99.96,ETQ697
+698,2024-04-16,Calça Moletom,Adidas,Bege,P,Estampa pequena na frente,5,328.99,1644.95,ETQ698
+699,2024-06-08,Short Jeans,Lacoste,Verde,P,Estampa grande nas costas,3,314.99,944.97,ETQ699
+700,2024-12-27,Camisa Manga Longa,Lacoste,Bege,P,Estampa grande nas costas,5,304.99,1524.95,ETQ700
+701,2024-01-07,Camisa Regata,Element,Azul Marinho,G,Sem estampa,2,203.99,407.98,ETQ701
+702,2024-10-09,Camiseta Polo,Quiksilver,Azul Claro,XG,Estampa pequena na frente,2,329.99,659.98,ETQ702
