@@ -1,0 +1,7 @@
+* Como limitar os níveis de acesso
+* Comunicação de um caixa com o gerente por meio de uma mensagem dentro do proprio sistema
+* Tirar Produto e colocar Controle de Estoque
+* Criar a opção Atualizar Estoque
+* Criar a opção Gerenciar Funcionário
+* Colocar a lgo do sistema
+* Criar tabela Agasalho e definir modelo para cada

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Venda</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        .product-entry {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+ <div class="container mt-5">
+        <h1>Venda</h1>
+
+        <!-- Exibe mensagens de flash -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="container mt-3">
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="form-container">
+                <h2 class="text-center">Realizar Venda</h2>
+                <form id="vendaForm" action="/registrar-venda" method="POST">
+                    <div id="produtosContainer">
+                        <div class="product-entry">
+                            <div class="mb-3">
+                                <label for="etiqueta" class="form-label">Etiqueta do Produto</label>
+                                <input type="text" class="form-control" name="etiqueta" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="quantidade" class="form-label">Quantidade</label>
+                                <input type="number" class="form-control" name="quantidade" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" id="addProductButton">Adicionar Outro Produto</button>
+                    <button type="submit" class="btn btn-primary w-100 mt-3">Registrar Venda</button>
+                </form>
+                <!-- Botão para voltar ao início -->
+                <a href="/" class="btn btn-secondary w-100 mt-3">Voltar ao Início</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.getElementById('addProductButton').addEventListener('click', function() {
+        const container = document.getElementById('produtosContainer');
+        
+        // Criar uma nova entrada de produto
+        const newProductEntry = document.createElement('div');
+        newProductEntry.classList.add('product-entry');
+
+        newProductEntry.innerHTML = `
+            <div class="mb-3">
+                <label for="etiqueta" class="form-label">Etiqueta do Produto</label>
+                <input type="text" class="form-control" name="etiqueta" required>
+            </div>
+            <div class="mb-3">
+                <label for="quantidade" class="form-label">Quantidade</label>
+                <input type="number" class="form-control" name="quantidade" required>
+            </div>
+        `;
+
+        // Adicionar a nova entrada ao container
+        container.appendChild(newProductEntry);
+    });
+</script>
+
+</body>
+</html>
