@@ -71,6 +71,76 @@
             </li>
 
             <!-- Other sidebar items... -->
+             <!-- Nav Item - Gerenciar Vendas Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGerenciarVendas" aria-expanded="true" aria-controls="collapseGerenciarVendas">
+      <i class="fas fa-fw fa-wrench"></i>
+      <span>Gerenciar Vendas</span>
+    </a>
+    <div id="collapseGerenciarVendas" class="collapse" aria-labelledby="headingGerenciarVendas" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Custom Components:</h6>
+        <a class="collapse-item" href="venda.html">Venda</a>
+        <a class="collapse-item" href="consultas.html">Consultas</a>
+      </div>
+    </div>
+  </li>
+  
+  
+          <!-- Divider -->
+          <hr class="sidebar-divider" />
+  
+          <!-- Heading -->
+          <div class="sidebar-heading">Addons</div>
+  
+          <!-- Nav Item - Pages Collapse Menu -->
+          <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapsePages"
+              aria-expanded="true"
+              aria-controls="collapsePages"
+            >
+              <i class="fas fa-fw fa-folder"></i>
+              <span>Pages</span>
+            </a>
+            <div
+              id="collapsePages"
+              class="collapse"
+              aria-labelledby="headingPages"
+              data-parent="#accordionSidebar"
+            >
+              <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Tela de Login:</h6>
+                <a class="collapse-item" href="login.html">Login</a>
+                <a class="collapse-item" href="register.html">Registrar</a>
+                <a class="collapse-item" href="forgot-password.html"
+                  >Esqueceu a senha?</a
+                >
+              </div>
+            </div>
+          </li>
+  
+          <!-- Nav Item - Charts -->
+          <li class="nav-item">
+            <a class="nav-link" href="analises.html">
+              <i class="fas fa-fw fa-chart-area"></i>
+              <span>Analises</span></a
+            >
+          </li>
+  
+          <!-- Nav Item - Tables -->
+          <li class="nav-item">
+            <a class="nav-link" href="tables.html">
+              <i class="fas fa-fw fa-table"></i>
+              <span>Tables</span></a
+            >
+          </li>
+  
+          <!-- Divider -->
+          <hr class="sidebar-divider d-none d-md-block" />
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -588,8 +658,42 @@ class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <!-- Modal content -->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
