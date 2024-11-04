@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import pyodbc
 from datetime import datetime
-
+#oi
 app = Flask(__name__)
 app.secret_key = "chave_secreta_para_flash_messages"
 

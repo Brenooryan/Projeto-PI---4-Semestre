@@ -10,7 +10,9 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>SB Admin 2 - Border Gerenciar Vendas</title>
+    <title>SB Admin 2 - analises
+
+    </title>
 
     <!-- Custom fonts for this template-->
     <link
@@ -44,16 +46,16 @@
             <!-- Ícone personalizado -->
             <img
               class="sidebar-brand-icon rotate-n-15"
-              src="E:\startbootstrap\startbootstrap-sb-admin-2-gh-pages\img\logo.svg"
+              src="D:\Faculdade\Projeto PI- 4 Semestre\Projeto-PI---4-Semestre\startbootstrap\img\logo.svg"
               alt="Custom Icon"
               width="60"
               height="60"
               style="margin-top: 10px; transform: rotate(15deg)"
             />
           </div>
-          <div class="sidebar-brand-text mx-2"></div>
-            <span style="margin-left: -5px; vertical-align: -6px;">Admin</span>
-            <sup style="vertical-align: -10px;">2</sup>
+            <div class="sidebar-brand-text mx-2"></div>
+            <span style="margin-left: -5px; vertical-align: -6px;">Liza</span>
+            <span style="vertical-align: -10px;"></span>
         </a>
 
         <!-- Divider -->
@@ -132,25 +134,19 @@
             data-parent="#accordionSidebar"
           >
             <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Login Screens:</h6>
+              <h6 class="collapse-header">Tela de Login:</h6>
               <a class="collapse-item" href="login.html">Login</a>
-              <a class="collapse-item" href="register.html">Register</a>
+              <a class="collapse-item" href="register.html">Registrar</a>
               <a class="collapse-item" href="forgot-password.html"
-                >Forgot Password</a
+                >Esqueceu a senha?</a
               >
-              <div class="collapse-divider"></div>
-              <h6 class="collapse-header">Other Pages:</h6>
-              <a class="collapse-item" href="cadastrarvenda.html"
-                >Cadastrar Venda</a
-              >
-              <a class="collapse-item active" href="cadastrarproduto.html"
-                >Cadastrar Produto</a
             </div>
           </div>
         </li>
 
-        <!-- Nav Item - Charts -->
-        <li class="nav-item">
+        <!-- Nav Item - analises
+          -->
+        <li class="nav-item active">
           <a class="nav-link" href="analises.html">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Analises</span></a
@@ -474,77 +470,74 @@
           <!-- Begin Page Content -->
           <div class="container-fluid">
             <!-- Page Heading -->
-            <h1 class="h3 mb-1 text-gray-800">Border Gerenciar Vendas</h1>
+            <h1 class="h3 mb-2 text-gray-800">analises
+
+            </h1>
             <p class="mb-4">
-              Bootstrap's default utility classes can be found on the official
-              <a href="https://getbootstrap.com/docs"
-                >Bootstrap Documentation</a
-              >
-              page. The custom Gerenciar Vendas below were created to extend this theme
-              past the default utility classes built into Bootstrap's framework.
+              Chart.js is a third party plugin that is used to generate the
+              analises
+               in this theme. The analises
+               below have been customized - for
+              further customization options, please visit the
+              <a target="_blank" href="https://www.chartjs.org/docs/latest/"
+                >official Chart.js documentation</a
+              >.
             </p>
 
             <!-- Content Row -->
             <div class="row">
-              <!-- Border Left Gerenciar Vendas -->
-              <div class="col-lg-6">
-                <div class="card mb-4 py-3 border-left-primary">
-                  <div class="card-body">.border-left-primary</div>
+              <div class="col-xl-8 col-lg-7">
+                <!-- Area Chart -->
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Area Chart
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="myAreaChart"></canvas>
+                    </div>
+                    <hr />
+                    Styling for the area chart can be found in the
+                    <code>/js/demo/chart-area-demo.js</code> file.
+                  </div>
                 </div>
 
-                <div class="card mb-4 py-3 border-left-secondary">
-                  <div class="card-body">.border-left-secondary</div>
-                </div>
-
-                <div class="card mb-4 py-3 border-left-success">
-                  <div class="card-body">.border-left-success</div>
-                </div>
-
-                <div class="card mb-4 py-3 border-left-info">
-                  <div class="card-body">.border-left-info</div>
-                </div>
-
-                <div class="card mb-4 py-3 border-left-warning">
-                  <div class="card-body">.border-left-warning</div>
-                </div>
-
-                <div class="card mb-4 py-3 border-left-danger">
-                  <div class="card-body">.border-left-danger</div>
-                </div>
-
-                <div class="card mb-4 py-3 border-left-dark">
-                  <div class="card-body">.border-left-dark</div>
+                <!-- Bar Chart -->
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart-bar">
+                      <canvas id="myBarChart"></canvas>
+                    </div>
+                    <hr />
+                    Styling for the bar chart can be found in the
+                    <code>/js/demo/chart-bar-demo.js</code> file.
+                  </div>
                 </div>
               </div>
 
-              <!-- Border Bottom Gerenciar Vendas -->
-              <div class="col-lg-6">
-                <div class="card mb-4 py-3 border-bottom-primary">
-                  <div class="card-body">.border-bottom-primary</div>
-                </div>
-
-                <div class="card mb-4 py-3 border-bottom-secondary">
-                  <div class="card-body">.border-bottom-secondary</div>
-                </div>
-
-                <div class="card mb-4 py-3 border-bottom-success">
-                  <div class="card-body">.border-bottom-success</div>
-                </div>
-
-                <div class="card mb-4 py-3 border-bottom-info">
-                  <div class="card-body">.border-bottom-info</div>
-                </div>
-
-                <div class="card mb-4 py-3 border-bottom-warning">
-                  <div class="card-body">.border-bottom-warning</div>
-                </div>
-
-                <div class="card mb-4 py-3 border-bottom-danger">
-                  <div class="card-body">.border-bottom-danger</div>
-                </div>
-
-                <div class="card mb-4 py-3 border-bottom-dark">
-                  <div class="card-body">.border-bottom-dark</div>
+              <!-- Donut Chart -->
+              <div class="col-xl-4 col-lg-5">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Donut Chart
+                    </h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-pie pt-4">
+                      <canvas id="myPieChart"></canvas>
+                    </div>
+                    <hr />
+                    Styling for the donut chart can be found in the
+                    <code>/js/demo/chart-pie-demo.js</code> file.
+                  </div>
                 </div>
               </div>
             </div>
@@ -620,5 +613,13 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
   </body>
 </html>
