@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
 
@@ -13,12 +13,39 @@
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Additional CSS for spacing -->
+    <style>
+        .login-form-container {
+            position: absolute;
+            bottom: -12%;
+            left: 40%;
+            transform: translateX(-50%);
+            width: 350%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .links-container a {
+            margin-bottom: 10px;
+        }
+        .links-container a:last-child {
+            margin-bottom: 0;
+        }
+    </style>
 
 </head>
 
@@ -35,54 +62,41 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
+                            <!-- Logo na esquerda -->
                             <div class="col-lg-6 d-none d-lg-block bg-login-image">
                                 <!-- Ícone personalizado -->
-                                <img
-                                class="justify-content-center; card o-hidden border-1 shadow-lg my-5"
-                                src="D:\Faculdade\Projeto PI- 4 Semestre\Projeto-PI---4-Semestre\startbootstrap\img\logo.svg"
-                                alt="Custom Icon"
-                                width="400"
-                                height="400"
-                                />
+                                <img src="\home\mariana\Documentos\GitHub\Projeto-PI---4-Semestre\startbootstrap\img\logo.svg" alt="Custom Icon" width="400" height="400">
                             </div>
+                            <!-- Formulário de login na direita -->
                             <div class="col-lg-6">
-                                <div class="p-5">
-                                    <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Bem vindo de volta!</h1>
-                                    </div>
-                                    <form class="user">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                <div class="login-form-container">
+                                    <div class="p-5">
+                                        <div class="text-center">
+                                            <h1 class="h4 text-gray-900 mb-4">Bem vindo de volta!</h1>
                                         </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Manter login</label>
+                                        <form class="user">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Endereço de Email">
                                             </div>
-                                        </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox small">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck">
+                                                    <label class="custom-control-label" for="customCheck">Manter login</label>
+                                                </div>
+                                            </div>
+                                            <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                                Login
+                                            </a>
+                                        </form>
                                         <hr>
-                                        <a href="index.html" class="btn btn-google btn-user btn-block">
-                                            <i class="fab fa-google fa-fw"></i> Login com Google
-                                        </a>
-                                        <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> Login com Facebook
-                                        </a>
-                                    </form>
-                                    <hr>
-                                    <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Esqueceu a senha?</a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="small" href="register.html">Criar uma conta</a>
+                                        <!-- Links de esqueceu a senha e criar conta -->
+                                        <div class="links-container">
+                                            <a class="small" href="forgot-password.html">Esqueceu a senha?</a>
+                                            <a class="small" href="register.html">Criar uma conta</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
