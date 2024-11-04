@@ -1,0 +1,54 @@
+// blackscale Text Utilities
+
+.text-xs {
+  font-size: 0.7rem;
+}
+
+.text-lg {
+  font-size: 1.2rem;
+}
+
+.text-black-100 {
+  color: $black-100 !important;
+}
+
+.text-black-200 {
+  color: $black-200 !important;
+}
+
+.text-black-300 {
+  color: $black-300 !important;
+}
+
+.text-black-400 {
+  color: $black-400 !important;
+}
+
+.text-black-500 {
+  color: $black-500 !important;
+}
+
+.text-black-600 {
+  color: $black-600 !important;
+}
+
+.text-black-700 {
+  color: $black-700 !important;
+}
+
+.text-black-800 {
+  color: $black-800 !important;
+}
+
+.text-black-900 {
+  color: $black-900 !important;
+}
+
+.icon-circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
