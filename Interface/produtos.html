@@ -490,48 +490,120 @@
 
           
           <!DOCTYPE html>
-          <html lang="pt-br">
-          <head>
-              <meta charset="UTF-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>Cadastro de Produto</title>
-              <!-- Links para CSS e outros recursos podem ser adicionados aqui -->
-          </head>
-          <body>
-              <h1>Cadastro de Produto</h1>
-              <form action="processa-cadastro.php" method="post">
-                  <div>
-                      <label for="etiqueta">Etiqueta do Produto:</label>
-                      <input type="text" id="etiqueta" name="etiqueta" required>
-                  </div>
-                  <div>
-                      <label for="modelo">Modelo:</label>
-                      <input type="text" id="modelo" name="modelo" required>
-                  </div>
-                  <div>
-                      <label for="marca">Marca:</label>
-                      <input type="text" id="marca" name="marca" required>
-                  </div>
-                  <div>
-                      <label for="cor">Cor:</label>
-                      <input type="text" id="cor" name="cor" required>
-                  </div>
-                  <div>
-                      <label for="tamanho">Tamanho:</label>
-                      <input type="text" id="tamanho" name="tamanho" required>
-                  </div>
-                  <div>
-                      <label for="estampa">Estampa:</label>
-                      <input type="text" id="estampa" name="estampa" required>
-                  </div>
-                  <div>
-                      <label for="precoUnitario">Preço Unitário:</label>
-                      <input type="number" id="precoUnitario" name="precoUnitario" step="0.01" required>
-                  </div>
-                  <button type="submit">Cadastrar Produto</button>
-              </form>
-          </body>
-          </html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <style>
+      .form-container {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start; /* Alterado para alinhar ao início */
+          color:#000000;
+      }
+
+      form {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          width: 100%;
+          max-width: 900px; /* Alterado para uma largura máxima menor */
+          margin-top: 50px; /* Adicionado para mover o formulário para cima */
+          margin-bottom: 50px; /* Adicionado para criar espaço na parte inferior */
+      }
+
+      label {
+          display: block;
+          margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          margin-bottom: 15px;
+      }
+
+      button {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          background-color: #000000;
+          color: #fff;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      button:hover {
+          background-color: #000000;
+      }
+  </style>
+
+</head>
+<body>
+    <div class="form-container">
+        <form action="processa-cadastro.php" method="post">
+            <h1>Cadastro de Produto</h1>
+            <div>
+                <label for="etiqueta">Etiqueta do Produto:</label>
+                <input type="text" id="etiqueta" name="etiqueta" required>
+            </div>
+            <div>
+              <label for="categoria">Categoria:</label>
+              <select id="categoria" name="categoria" required>
+                  <option value="roupas">Roupas</option>
+                  <option value="calcados">Calçados</option>
+                  <option value="acessorios">Acessórios</option>
+              </select>
+          </div>
+          <div style="margin-top: 1em;"> <!-- Adiciona uma margem superior para criar espaço -->
+              <label for="subcategoria">Sub-Categoria:</label>
+              <select id="subcategoria" name="subcategoria" required>
+                  <option value="camisa">Camisa</option>
+                  <option value="short">Short</option>
+                  <option value="agasalho">Agasalho</option>
+                  <option value="tenis">Tênis</option>
+                  <option value="chinelo">Chinelo</option>
+                  <option value="bone">Boné</option>
+                  <option value="corrente">Corrente</option>
+              </select>
+          </div>
+          
+            <div>
+              <div style="margin-top: 1em;"> <!-- Adiciona uma margem superior para criar espaço -->
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" required>
+            </div>
+            <div>
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required>
+            </div>
+            <div>
+                <label for="cor">Cor:</label>
+                <input type="text" id="cor" name="cor" required>
+            </div>
+            <div>
+                <label for="tamanho">Tamanho:</label>
+                <input type="text" id="tamanho" name="tamanho" required>
+            </div>
+            <div>
+                <label for="estampa">Estampa:</label>
+                <input type="text" id="estampa" name="estampa" required>
+            </div>
+            <div>
+                <label for="precoUnitario">Preço Unitário:</label>
+                <input type="number" id="precoUnitario" name="precoUnitario" step="0.01" required>
+            </div>
+            <button type="submit">Cadastrar Produto</button>
+        </form>
+    </div>
+</body>
+</html>
+
           
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
