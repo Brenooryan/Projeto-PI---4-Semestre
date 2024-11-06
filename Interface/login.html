@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
 
     <meta charset="utf-8">
@@ -20,6 +19,10 @@
 
     <!-- Additional CSS for spacing -->
     <style>
+        /* Fundo preto para a página */
+        body {
+            background-color: #000;
+        }
         .login-form-container {
             position: absolute;
             bottom: -12%;
@@ -28,7 +31,8 @@
             width: 350%;
             max-width: 400px;
             padding: 20px;
-            background-color: #fff;
+            background-color: #fff; /* Fundo branco para o formulário */
+            color: #333; /* Texto em cor escura para o contraste */
             border-top: 1px solid #ddd;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
@@ -47,9 +51,19 @@
         }
     </style>
 
-</head>
+    <!-- Additional CSS for logo positioning and size -->
+<style>
+    .bg-login-image img {
+        position: relative;
+        left: 10px; /* Ajuste para mover horizontalmente */
+        bottom: -5px; /* Ajuste para mover verticalmente */
+        width: 95% ; /* Prioriza o tamanho da largura */
+    }
+</style>
 
-<body class="bg-gradient-primary">
+
+</head>
+<body>
 
     <div class="container">
 
@@ -65,21 +79,24 @@
                             <!-- Logo na esquerda -->
                             <div class="col-lg-6 d-none d-lg-block bg-login-image">
                                 <!-- Ícone personalizado -->
-                                <img src="\home\mariana\Documentos\GitHub\Projeto-PI---4-Semestre\Interface\img\logo.svg" alt="Custom Icon" width="400" height="400">
+                                <img src="\home\mariana\Documentos\GitHub\Projeto-PI---4-Semestre\Interface\img\logo.svg"
+                                 alt="Custom Icon" 
+                                 width="400" 
+                                 height="400">
                             </div>
                             <!-- Formulário de login na direita -->
                             <div class="col-lg-6">
                                 <div class="login-form-container">
                                     <div class="p-5">
                                         <div class="text-center">
-                                            <h1 class="h4 text-gray-900 mb-4">Bem vindo de volta!</h1>
+                                            <h1 class="h4 text-gray-900 mb-4">Bem-vindo de volta!</h1>
                                         </div>
                                         <form class="user">
                                             <div class="form-group">
                                                 <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Endereço de Email">
                                             </div>
                                             <div class="form-group">
-                                                <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                                <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Senha">
                                             </div>
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox small">
@@ -121,5 +138,4 @@
     <script src="js/sb-admin-2.min.js"></script>
 
 </body>
-
 </html>
