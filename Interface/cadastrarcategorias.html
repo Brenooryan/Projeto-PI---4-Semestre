@@ -104,7 +104,7 @@
                 <div id="collapseGerenciarVendas" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="venda.html">Venda</a>
+                        <a class="collapse-item" href="registrarvenda.html">Registrar Venda</a>
                         <a class="collapse-item" href="consultas.html">Consultas</a>
                     </div>
                 </div>
@@ -196,37 +196,158 @@
                         <i class="fa fa-bars"></i>
                     </button>
                 </nav>
-                
-
-                <!-- Main Form Section -->
+                html
+                Copy code
+                <!DOCTYPE html>
+                <html lang="pt-br">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Categorias</title>
+                    <style>
+                        .form-container {
+                            margin: 20px;
+                        }
+                    </style>
+                </head>
                 <body>
-                  <div class="form-container">
+                
+                <!-- Main Form Section -->
+                    <div class="form-container">
                       <form action="processa-cadastro.php" method="post">
                           <h1>Categorias</h1>
+                
                           <div>
-                            <label for="categoria">Tipo:</label>
-                            <select id="categoria" name="categoria" required>
-                                <option value="selecioneumtipo">Selecione um tipo</option>
-                                <option value="roupas">Roupas</option>
-                                <option value="calcados">Calçados</option>
-                                <option value="acessorios">Acessórios</option>
-                                <option value="modelo">Modelo</option>
-                                <option value="marca">Marca</option>
-                                <option value="cor">Cor</option>
-                                <option value="tamanho">Tamanho</option>
-                                <option value="estampa">Estampa</option>
-                            </select>
-                        </div>
-                        <div style="margin-top: 1em;"> <!-- Adiciona uma margem superior para criar espaço -->
-                          <div>
-                            <div style="margin-top: 1em;"> <!-- Adiciona uma margem superior para criar espaço -->
-                              <label for="modelo">Modelo:</label>
-                              <input type="text" id="modelo" name="modelo" required>
+                              <label for="categoria">Categoria:</label>
+                              <select id="categoria" name="categoria" onchange="atualizarOpcoes(this)" required>
+                                  <option value="">Selecione uma categoria</option>
+                                  <option value="produtos">Produtos</option>
+                                  <option value="caracteristicas">Características</option>
+                              </select>
                           </div>
-                  </div>   
-              </body>
                 
+                          <div>
+                              <label for="opcao">Opções:</label>
+                              <select id="opcao" name="opcao" onchange="validarSubcategoria(this)" required>
+                                  <!-- As opções serão atualizadas com base na seleção da categoria -->
+                              </select>
+                          </div>
                 
+                          <!-- Subcategoria será exibida após selecionar a categoria e a opção -->
+                          <div id="subcategoria-container" style="display:none;">
+                              <label for="subcategoria">Subcategoria:</label>
+                              <select id="subcategoria" name="subcategoria" required>
+                                  <!-- As subcategorias aparecerão após a seleção de uma categoria e opção -->
+                              </select>
+                          </div>
+                
+                          <div style="margin-top: 1em;">
+                              <label for="nome">Nome:</label>
+                              <input type="text" id="nome" name="nome" required>
+                          </div>
+                      </form>
+                    </div>
+                
+                    <!-- Scripts -->
+                    <script>
+                        // Função que atualiza as opções da categoria
+                        function atualizarOpcoes(selectElement) {
+                            var categoria = selectElement.value;
+                            var opcaoSelect = document.getElementById('opcao');
+                            
+                            // Limpar opções anteriores
+                            opcaoSelect.innerHTML = '';
+                            var option = document.createElement('option');
+                            option.value = '';
+                            option.text = 'Selecione uma opção';
+                            opcaoSelect.appendChild(option);
+                
+                            // Adicionar opções baseadas na categoria selecionada
+                            if (categoria === 'produtos') {
+                                var produtos = ['Roupas', 'Calçados', 'Acessórios'];
+                                produtos.forEach(function(item) {
+                                    var option = document.createElement('option');
+                                    option.value = item.toLowerCase();  // Usando o valor em minúsculas
+                                    option.text = item;
+                                    opcaoSelect.appendChild(option);
+                                });
+                            } else if (categoria === 'caracteristicas') {
+                                var caracteristicas = ['Modelo', 'Marca', 'Cor', 'Tamanho', 'Estampa'];
+                                caracteristicas.forEach(function(item) {
+                                    var option = document.createElement('option');
+                                    option.value = item.toLowerCase();
+                                    option.text = item;
+                                    opcaoSelect.appendChild(option);
+                                });
+                            }
+                            
+                            // Mostrar o campo de subcategoria apenas se uma categoria foi selecionada
+                            var subcategoriaContainer = document.getElementById('subcategoria-container');
+                            if (categoria !== '') {
+                                subcategoriaContainer.style.display = 'block';
+                            } else {
+                                subcategoriaContainer.style.display = 'none';
+                            }
+                        }
+                
+                        // Função para validar a subcategoria obrigatória e atualizar as opções de subcategoria
+                        function validarSubcategoria(selectElement) {
+                            var categoria = document.getElementById('categoria').value;
+                            var opcao = selectElement.value;
+                            var subcategoriaSelect = document.getElementById('subcategoria');
+                            var subcategoriaContainer = document.getElementById('subcategoria-container');
+                            
+                            // Limpar opções anteriores de subcategoria
+                            subcategoriaSelect.innerHTML = '';
+                
+                            // Se a opção selecionada for "Produtos", mostrar as subcategorias
+                            if (categoria === 'produtos') {
+                                if (opcao === 'roupas') {
+                                    var subcategorias = ['Camisa', 'Short', 'Agasalho'];
+                                    subcategorias.forEach(function(item) {
+                                        var option = document.createElement('option');
+                                        option.value = item.toLowerCase();
+                                        option.text = item;
+                                        subcategoriaSelect.appendChild(option);
+                                    });
+                                } else if (opcao === 'calçados') {
+                                    var subcategorias = ['Tênis', 'Chinelo'];
+                                    subcategorias.forEach(function(item) {
+                                        var option = document.createElement('option');
+                                        option.value = item.toLowerCase();
+                                        option.text = item;
+                                        subcategoriaSelect.appendChild(option);
+                                    });
+                                } else if (opcao === 'acessorios') {
+                                    var subcategorias = ['Boné', 'Corrente'];
+                                    subcategorias.forEach(function(item) {
+                                        var option = document.createElement('option');
+                                        option.value = item.toLowerCase();
+                                        option.text = item;
+                                        subcategoriaSelect.appendChild(option);
+                                    });
+                                }
+                            }
+                
+                            // Se a opção selecionada for "Características", não há subcategorias
+                            if (categoria === 'caracteristicas') {
+                                var option = document.createElement('option');
+                                option.value = 'caracteristica';
+                                option.text = 'Esta opção não requer subcategoria';
+                                subcategoriaSelect.appendChild(option);
+                            }
+                
+                            // Subcategoria será obrigatória se uma opção for selecionada
+                            if (opcao === '') {
+                                subcategoriaSelect.setAttribute('disabled', true);
+                                subcategoriaContainer.style.display = 'none';
+                            } else {
+                                subcategoriaSelect.removeAttribute('disabled');
+                                subcategoriaContainer.style.display = 'block';
+                            }
+                        }
+                    </script>
+                </body>
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
