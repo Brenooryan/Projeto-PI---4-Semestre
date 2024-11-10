@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,30 +16,36 @@
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     
     <!-- Custom styles for the form -->
-    <style>
+    <style>/* Ajuste para o contêiner do formulário de categoria */
         .form-container {
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
+            justify-content: flex-start; /* Alinha o formulário à esquerda */
+            align-items: flex-start; /* Alinha o formulário ao topo */
             color: #000;
+            position: absolute; /* Ajuste de posicionamento absoluto */
+            top: 200px; /* Mantém o ajuste para cima */
+            left: 700px; /* Mover mais para a direita, aumente o valor conforme necessário */
+            width: 700px; /* Ajuste automático do conteúdo */
         }
-
+        
+        /* Estilo do formulário de categorias */
         form {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 100%;
-            max-width: 900px;
-            margin-top: 50px;
+            max-width: 900px; /* Largura do formulário ajustada */
+            margin-top: 0;
             margin-bottom: 50px;
         }
-
+        
+        /* Estilos para rótulos e campos de entrada */
         label {
             display: block;
             margin-bottom: 5px;
         }
-
+        
         input[type="text"],
         input[type="number"] {
             width: 100%;
@@ -47,7 +54,8 @@
             border-radius: 4px;
             margin-bottom: 15px;
         }
-
+        
+        /* Estilos para o botão */
         button {
             width: 100%;
             padding: 10px;
@@ -57,10 +65,12 @@
             border-radius: 4px;
             cursor: pointer;
         }
-
+        
         button:hover {
             background-color: #333;
         }
+        
+        
     </style>
 </head>
 
@@ -180,24 +190,82 @@
      >
    </li>
 
-            <!-- Outros itens da sidebar omitidos para brevidade -->
-
-            <hr class="sidebar-divider d-none d-md-block">
-        </ul>
-        <!-- End of Sidebar -->
-
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-            <!-- Main Content -->
-            <div id="content">
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                </nav>
-                html
-                Copy code
+              <!-- Container para centralizar no topo direito -->
+<div class="d-flex justify-content-end align-items-start position-fixed w-100 p-3">
+    <div>
+      <!-- Topbar Search -->
+      <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control bg-light border-0 small"
+            placeholder="Search for..."
+            aria-label="Search"
+            aria-describedby="basic-addon2"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+              <i class="fas fa-search fa-sm"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+  
+      <!-- Topbar Navbar -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+        <li class="nav-item dropdown no-arrow d-sm-none">
+          <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-search fa-fw"></i>
+          </a>
+          <!-- Dropdown - Messages -->
+          <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+            <form class="form-inline mr-auto w-100 navbar-search">
+              <div class="input-group">
+                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+  
+        <div class="topbar-divider d-none d-sm-block"></div>
+  
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+            <img class="img-profile rounded-circle" src="img/undraw_profile.svg" />
+          </a>
+          <!-- Dropdown - User Information -->
+          <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+              Profile
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+              Settings
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+              Activity Log
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+              <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+              Logout
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
                 <!DOCTYPE html>
                 <html lang="pt-br">
                 <head>
@@ -245,8 +313,11 @@
                               <label for="nome">Nome:</label>
                               <input type="text" id="nome" name="nome" required>
                           </div>
+                          <button type="submit">Cadastrar Produto</button>
                       </form>
                     </div>
+
+                    
                 
                     <!-- Scripts -->
                     <script>
@@ -351,6 +422,7 @@
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
 
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
