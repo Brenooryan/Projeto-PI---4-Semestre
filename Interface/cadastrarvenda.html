@@ -35,15 +35,15 @@
         class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
         id="accordionSidebar"
       >
+        <!-- Sidebar Brand -->
         <a
           class="sidebar-brand d-flex align-items-center justify-content-center"
           href="index.html"
         >
           <div class="sidebar-brand-icon rotate-n-15">
-            <!-- Ícone personalizado -->
             <img
               class="sidebar-brand-icon rotate-n-15"
-              src="\home\mariana\Documentos\GitHub\Projeto-PI---4-Semestre\startbootstrap\img\logo.svg"
+              src="\home\mariana\Documentos\GitHub\Projeto-PI---4-Semestre\Interface\img\logo.svg"
               alt="Custom Icon"
               width="60"
               height="60"
@@ -72,31 +72,32 @@
         <!-- Heading -->
         <div class="sidebar-heading">Interface</div>
 
-        <!-- Nav Item - Pages Collapse Menu -->
+        <!-- Nav Item - Gerenciar Produto Collapse Menu -->
         <li class="nav-item">
           <a
             class="nav-link collapsed"
             href="#"
             data-toggle="collapse"
-            data-target="#collapseTwo"
+            data-target="#collapseGerenciarProduto"
             aria-expanded="true"
-            aria-controls="collapseTwo"
+            aria-controls="collapseGerenciarProduto"
           >
             <i class="fas fa-fw fa-cog"></i>
             <span>Gerenciar Produto</span>
           </a>
           <div
-            id="collapseTwo"
+            id="collapseGerenciarProduto"
             class="collapse"
-            aria-labelledby="headingTwo"
+            aria-labelledby="headingGerenciarProduto"
             data-parent="#accordionSidebar"
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Custom Components:</h6>
               <a class="collapse-item" href="produtos.html">Produtos</a>
-              <a class="collapse-item" href="cadastrar.html">Cadastrar</a>
               <a class="collapse-item" href="estoque.html">Estoque</a>
-              <a class="collapse-item" href="auxiliares.html">Auxiliares</a>
+              <a class="collapse-item" href="cadastrarcategorias.html"
+                >Cadastrar Categorias</a
+              >
             </div>
           </div>
         </li>
@@ -122,8 +123,43 @@
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Custom Components:</h6>
-              <a class="collapse-item" href="venda.html">Venda</a>
-              <a class="collapse-item" href="consultas.html">Consultas</a>
+              <a class="collapse-item" href="registrarvenda.html"
+                >Registrar Venda</a
+              >
+              <a class="collapse-item" href="vendaassistida.html"
+                >Venda Assistida</a
+              >
+            </div>
+          </div>
+        </li>
+
+        <!-- Nav Item - Gerenciar Funcionários Collapse Menu -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseGerenciarFuncionarios"
+            aria-expanded="true"
+            aria-controls="collapseGerenciarFuncionarios"
+          >
+            <i class="fas fa-fw fa-user"></i>
+            <span>Gerenciar Funcionários</span>
+          </a>
+          <div
+            id="collapseGerenciarFuncionarios"
+            class="collapse"
+            aria-labelledby="headingGerenciarFuncionarios"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Custom Components:</h6>
+              <a class="collapse-item" href="cadastrarfuncionario.html"
+                >Cadastrar Funcionários</a
+              >
+              <a class="collapse-item" href="consultarfuncionario.html"
+                >Consultar Funcionário</a
+              >
             </div>
           </div>
         </li>
@@ -171,15 +207,6 @@
             <span>Analises</span></a
           >
         </li>
-
-        <!-- Nav Item - Tables -->
-        <li class="nav-item">
-          <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a
-          >
-        </li>
-
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block" />
 
@@ -286,47 +313,7 @@
                   aria-labelledby="alertsDropdown"
                 >
                   <h6 class="dropdown-header">Alerts Center</h6>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <div class="icon-circle bg-primary">
-                        <i class="fas fa-file-alt text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="small text-gray-500">December 12, 2019</div>
-                      <span class="font-weight-bold"
-                        >A new monthly report is ready to download!</span
-                      >
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <div class="icon-circle bg-success">
-                        <i class="fas fa-donate text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="small text-gray-500">December 7, 2019</div>
-                      $290.29 has been deposited into your account!
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <div class="icon-circle bg-warning">
-                        <i class="fas fa-exclamation-triangle text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="small text-gray-500">December 2, 2019</div>
-                      Spending Alert: We've noticed unusually high spending for
-                      your account.
-                    </div>
-                  </a>
-                  <a
-                    class="dropdown-item text-center small text-gray-500"
-                    href="#"
-                    >Show All Alerts</a
-                  >
+                  <!-- Dropdown items -->
                 </div>
               </li>
 
@@ -351,82 +338,7 @@
                   aria-labelledby="messagesDropdown"
                 >
                   <h6 class="dropdown-header">Message Center</h6>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img
-                        class="rounded-circle"
-                        src="img/undraw_profile_1.svg"
-                        alt="..."
-                      />
-                      <div class="status-indicator bg-success"></div>
-                    </div>
-                    <div class="font-weight-bold">
-                      <div class="text-truncate">
-                        Hi there! I am wondering if you can help me with a
-                        problem I've been having.
-                      </div>
-                      <div class="small text-gray-500">Emily Fowler · 58m</div>
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img
-                        class="rounded-circle"
-                        src="img/undraw_profile_2.svg"
-                        alt="..."
-                      />
-                      <div class="status-indicator"></div>
-                    </div>
-                    <div>
-                      <div class="text-truncate">
-                        I have the photos that you ordered last month, how would
-                        you like them sent to you?
-                      </div>
-                      <div class="small text-gray-500">Jae Chun · 1d</div>
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img
-                        class="rounded-circle"
-                        src="img/undraw_profile_3.svg"
-                        alt="..."
-                      />
-                      <div class="status-indicator bg-warning"></div>
-                    </div>
-                    <div>
-                      <div class="text-truncate">
-                        Last month's report looks great, I am very happy with
-                        the progress so far, keep up the good work!
-                      </div>
-                      <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img
-                        class="rounded-circle"
-                        src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                        alt="..."
-                      />
-                      <div class="status-indicator bg-success"></div>
-                    </div>
-                    <div>
-                      <div class="text-truncate">
-                        Am I a good boy? The reason I ask is because someone
-                        told me that people say this to all dogs, even if they
-                        aren't good...
-                      </div>
-                      <div class="small text-gray-500">
-                        Chicken the Dog · 2w
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    class="dropdown-item text-center small text-gray-500"
-                    href="#"
-                    >Read More Messages</a
-                  >
+                  <!-- Dropdown items -->
                 </div>
               </li>
 

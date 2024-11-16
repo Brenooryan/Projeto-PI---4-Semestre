@@ -50,7 +50,7 @@
             <!-- Ícone personalizado -->
             <img
               class="sidebar-brand-icon rotate-n-15"
-              src="\home\mariana\Documentos\GitHub\Projeto-PI---4-Semestre\startbootstrap\img\logo.svg"
+              src="\home\mariana\Documentos\GitHub\Projeto-PI---4-Semestre\Interface\img\logo.svg"
               alt="Custom Icon"
               width="60"
               height="60"
@@ -58,8 +58,8 @@
             />
           </div>
           <div class="sidebar-brand-text mx-2"></div>
-            <span style="margin-left: -5px; vertical-align: -6px;">Liza</span>
-            <sup style="vertical-align: -10px;"></sup>
+          <span style="margin-left: -5px; vertical-align: -6px">Liza</span>
+          <sup style="vertical-align: -10px"></sup>
         </a>
 
         <!-- Divider -->
@@ -80,37 +80,95 @@
         <div class="sidebar-heading">Interface</div>
 
         <!-- Nav Item - Pages Collapse Menu -->
-<li class="nav-item">
-  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-    <i class="fas fa-fw fa-cog"></i>
-    <span>Gerenciar Produto</span>
-  </a>
-  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-    <div class="bg-white py-2 collapse-inner rounded">
-      <h6 class="collapse-header">Custom Components:</h6>
-      <a class="collapse-item" href="produtos.html">Produtos</a>
-      <a class="collapse-item" href="cadastrar.html">Cadastrar</a>
-      <a class="collapse-item" href="estoque.html">Estoque</a>
-      <a class="collapse-item" href="auxiliares.html">Auxiliares</a>
-    </div>
-  </div>
-</li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="true"
+            aria-controls="collapseTwo"
+          >
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Gerenciar Produto</span>
+          </a>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Custom Components:</h6>
+              <a class="collapse-item" href="produtos.html">Produtos</a>
+              <a class="collapse-item" href="estoque.html">Estoque</a>
+              <a class="collapse-item" href="cadastrarcategorias.html"
+                >Cadastrar Categorias</a
+              >
+            </div>
+          </div>
+        </li>
 
-<!-- Nav Item - Gerenciar Vendas Collapse Menu -->
-<li class="nav-item">
-  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGerenciarVendas" aria-expanded="true" aria-controls="collapseGerenciarVendas">
-    <i class="fas fa-fw fa-wrench"></i>
-    <span>Gerenciar Vendas</span>
-  </a>
-  <div id="collapseGerenciarVendas" class="collapse" aria-labelledby="headingGerenciarVendas" data-parent="#accordionSidebar">
-    <div class="bg-white py-2 collapse-inner rounded">
-      <h6 class="collapse-header">Custom Components:</h6>
-      <a class="collapse-item" href="venda.html">Venda</a>
-      <a class="collapse-item" href="consultas.html">Consultas</a>
-    </div>
-  </div>
-</li>
-
+        <!-- Nav Item - Gerenciar Vendas Collapse Menu -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseGerenciarVendas"
+            aria-expanded="true"
+            aria-controls="collapseGerenciarVendas"
+          >
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Gerenciar Vendas</span>
+          </a>
+          <div
+            id="collapseGerenciarVendas"
+            class="collapse"
+            aria-labelledby="headingGerenciarVendas"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Custom Components:</h6>
+              <a class="collapse-item" href="registrarvenda.html"
+                >Registrar Venda</a
+              >
+              <a class="collapse-item" href="vendaassistida.html"
+                >Venda Assistida</a
+              >
+            </div>
+          </div>
+        </li>
+        <!-- Nav Item - Gerenciar Funcionários Collapse Menu -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseGerenciarVendas"
+            aria-expanded="true"
+            aria-controls="collapseGerenciarVendas"
+          >
+            <i class="fas fa-fw fa-funcionarios"></i>
+            <span>Gerenciar Funcionários</span>
+          </a>
+          <div
+            id="collapseGerenciarVendas"
+            class="collapse"
+            aria-labelledby="headingGerenciarVendas"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Custom Components:</h6>
+              <a class="collapse-item" href="cadastrarfuncionario.html"
+                >Cadastrar Funcionários</a
+              >
+              <a class="collapse-item" href="consultarfuncionario.html"
+                >Consultar Funcionário</a
+              >
+            </div>
+          </div>
+        </li>
 
         <!-- Divider -->
         <hr class="sidebar-divider" />
@@ -153,14 +211,6 @@
           <a class="nav-link" href="analises.html">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Analises</span></a
-          >
-        </li>
-
-        <!-- Nav Item - Tables -->
-        <li class="nav-item active">
-          <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a
           >
         </li>
 
