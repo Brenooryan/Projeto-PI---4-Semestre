@@ -36,5 +36,5 @@ def open_browser():
 
 # Iniciar o aplicativo Flask e abrir o navegador automaticamente
 if __name__ == '__main__':
-    threading.Thread(target=open_browser).start()  # Usar threading para abrir o navegador
+    threading.Thread(target=open_browser).start() 
     app.run(debug=True, use_reloader=False) 
