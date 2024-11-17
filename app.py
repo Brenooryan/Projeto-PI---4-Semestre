@@ -25,7 +25,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/login')
+@app.route('/login', methods={'GET','POST'})
 def login():
     return render_template('login.html')
 
@@ -35,6 +35,7 @@ def open_browser():
     if not browser_opened:
         webbrowser.open("http://127.0.0.1:5000/")  # Abre o navegador na URL
         browser_opened = True
+
 
 # Iniciar o aplicativo Flask e abrir o navegador automaticamente
 if __name__ == '__main__':
