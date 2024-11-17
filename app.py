@@ -20,6 +20,8 @@ def connect_db():
 
 @app.route('/')
 def index():
+    if 'user' not in session:
+        return redirect(url_for('login'))
     return render_template('index.html')
 
 
