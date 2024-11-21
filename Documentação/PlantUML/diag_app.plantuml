@@ -1,0 +1,43 @@
+@startuml teste
+title Processo de Análise de Texto e Busca Semântica
+
+actor Usuário
+participant "NLTK\nStopwords" as Stopwords
+participant "Spacy\nModelo NLP" as Spacy
+participant "SBERT\nModelo de Embeddings" as SBERT
+
+Usuário -> "Sistema": Input: Texto completo (ex. Bíblia)
+"Sistema" -> Stopwords: Baixar stopwords em português
+Stopwords --> "Sistema": Retorna lista de stopwords
+"Sistema" -> Spacy: Carregar modelo para português
+Spacy --> "Sistema": Retorna modelo de NLP
+
+alt Pré-processamento do Texto
+    "Sistema" -> "Sistema": Remover referências (capítulos e versículos)
+    "Sistema" -> "Sistema": Converter para minúsculas
+    "Sistema" -> "Sistema": Remover pontuação
+    "Sistema" -> Stopwords: Remover stopwords
+    "Sistema" -> Spacy: Lematizar o texto
+    Spacy --> "Sistema": Texto lematizado
+end
+
+alt Divisão em Chunks
+    "Sistema" -> "Sistema": Dividir o texto em chunks (200 palavras)
+end
+
+alt Geração de Embeddings
+    "Sistema" -> SBERT: Gerar embeddings para cada chunk
+    SBERT --> "Sistema": Embeddings dos chunks
+end
+
+alt Busca Semântica
+    Usuário -> "Sistema": Input: Query (ex. "amor ao próximo")
+    "Sistema" -> SBERT: Gerar embedding da query
+    SBERT --> "Sistema": Embedding da query
+    "Sistema" -> "Sistema": Calcular similaridade com embeddings dos chunks
+    "Sistema" -> "Sistema": Identificar o chunk mais similar
+end
+
+"Sistema" -> Usuário: Output: Texto mais semelhante e pontuação de similaridade
+
+@enduml

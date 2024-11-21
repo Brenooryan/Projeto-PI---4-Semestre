@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Cadastrar Produto</h1>
+
+    <form id="produto-form" method="POST" action="{{ url_for('cadastrar_produto') }}">
+        <!-- Dropdown de Tipo de Produto -->
+        <label for="tipo_produto">Tipo de Produto:</label>
+        <select id="tipo_produto" name="tipo_produto">
+            <option value="">Selecione um tipo</option>
+            {% for tipo in tipos_produto %}
+            <option value="{{ tipo }}">{{ tipo }}</option>
+            {% endfor %}
+        </select>
+
+        <!-- Os campos abaixo serão preenchidos dinamicamente via AJAX -->
+        <div id="opcoes_produto" style="display:none;">
+            <label for="modelo">Modelo:</label>
+            <select id="modelo" name="modelo"></select>
+
+            <label for="marca">Marca:</label>
+            <select id="marca" name="marca"></select>
+
+            <label for="cor">Cor:</label>
+            <select id="cor" name="cor"></select>
+
+            <label for="tamanho">Tamanho:</label>
+            <select id="tamanho" name="tamanho"></select>
+
+            <label for="preco_unitario">Preço Unitário:</label>
+            <input type="text" id="preco_unitario" name="preco_unitario">
+        </div>
+
+        <button type="submit">Cadastrar Produto</button>
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            $('#tipo_produto').change(function() {
+                var tipoProduto = $(this).val();
+
+                if (tipoProduto) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/get_produto_info',
+                        data: {tipo_produto: tipoProduto},
+                        success: function(response) {
+                            $('#modelo').empty();
+                            $('#marca').empty();
+                            $('#cor').empty();
+                            $('#tamanho').empty();
+
+                            // Preencher os campos de opções
+                            $('#modelo').append('<option value="">Selecione o modelo</option>');
+                            $.each(response.modelos, function(index, modelo) {
+                                $('#modelo').append('<option value="' + modelo + '">' + modelo + '</option>');
+                            });
+
+                            $('#marca').append('<option value="">Selecione a marca</option>');
+                            $.each(response.marcas, function(index, marca) {
+                                $('#marca').append('<option value="' + marca + '">' + marca + '</option>');
+                            });
+
+                            $('#cor').append('<option value="">Selecione a cor</option>');
+                            $.each(response.cores, function(index, cor) {
+                                $('#cor').append('<option value="' + cor + '">' + cor + '</option>');
+                            });
+
+                            $('#tamanho').append('<option value="">Selecione o tamanho</option>');
+                            $.each(response.tamanhos, function(index, tamanho) {
+                                $('#tamanho').append('<option value="' + tamanho + '">' + tamanho + '</option>');
+                            });
+
+                            // Mostrar as opções de produto
+                            $('#opcoes_produto').show();
+                        }
+                    });
+                } else {
+                    $('#opcoes_produto').hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

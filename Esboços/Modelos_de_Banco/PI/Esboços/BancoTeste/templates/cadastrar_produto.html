@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ <div class="container mt-5">
+        <h1>Cadastrar Produto</h1>
+
+        <!-- Exibe mensagens de flash -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="container mt-3">
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+<div class="container">
+    <h1 class="text-center">Produto</h1>
+    <form action="/cadastrar-produto" method="post">
+        <div class="mb-3">
+            <label for="etiqueta" class="form-label">Etiqueta</label>
+            <input type="text" class="form-control" id="etiqueta" name="etiqueta" required>
+        </div>
+        <div class="mb-3">
+            <label for="modelo" class="form-label">Modelo</label>
+            <select class="form-select" id="modelo" name="modelo" required>
+                {% for modelo in modelos %}
+                <option value="{{ modelo }}">{{ modelo }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="marca" class="form-label">Marca</label>
+            <select class="form-select" id="marca" name="marca" required>
+                {% for marca in marcas %}
+                <option value="{{ marca }}">{{ marca }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="cor" class="form-label">Cor</label>
+            <select class="form-select" id="cor" name="cor" required>
+                {% for cor in cores %}
+                <option value="{{ cor }}">{{ cor }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="tamanho" class="form-label">Tamanho</label>
+            <select class="form-select" id="tamanho" name="tamanho" required>
+                {% for tamanho in tamanhos %}
+                <option value="{{ tamanho }}">{{ tamanho }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="estampa" class="form-label">Estampa</label>
+            <select class="form-select" id="estampa" name="estampa" required>
+                {% for estampa in estampas %}
+                <option value="{{ estampa }}">{{ estampa }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="preco" class="form-label">Preço</label>
+            <input type="number" class="form-control" id="preco" name="preco_unitario" step="0.01" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <a href="/" class="btn btn-secondary">Voltar para o Início</a>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<form method="POST" action="{{ url_for('cadastrar_produto') }}">
+    <!-- Campos existentes -->
+    <label for="tipo_produto">Tipo de Produto:</label>
+    <select name="tipo_produto" id="tipo_produto">
+        {% for tipo in tipos_produto %}
+        <option value="{{ tipo }}">{{ tipo }}</option>
+        {% endfor %}
+    </select>
+    <!-- Demais campos e botão de envio -->
+</form>
