@@ -1,0 +1,10 @@
+@startuml
+    class aluno{
+        +String Nome
+        +String Endereco
+        +Integer Matricula
+
+        +Integer obterMatricula() 
+    }
+
+@@enduml
