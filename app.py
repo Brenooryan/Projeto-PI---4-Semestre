@@ -12,7 +12,7 @@ browser_opened = False
 def connect_db():
     conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};'
                           'SERVER=localhost;'
-                          'DATABASE=BANCOPI4;'
+                          'DATABASE=BANCOPI2;'
                           'Trusted_Connection=yes;'
                           'Encrypt=yes;'
                           'TrustServerCertificate=yes;')
@@ -20,14 +20,21 @@ def connect_db():
 
 @app.route('/')
 def index():
-    if 'user' not in session:
-        return redirect(url_for('login'))
     return render_template('index.html')
 
-
-@app.route('/login', methods={'GET','POST'})
+@app.route('/login.html', methods=['GET', 'POST'])
 def login():
-    return render_template('login.html')
+    return render_template('login.html')  # Renderiza a página de login
+
+@app.route('/register.html', methods=['GET','POST'])
+def register():
+    return render_template('register.html') 
+
+@app.route('/forgot-password.html', methods=['GET','POST'])
+def forgotpassword():
+    return render_template('forgot-password.html') 
+
+
 
 # Função para abrir o navegador
 def open_browser():
