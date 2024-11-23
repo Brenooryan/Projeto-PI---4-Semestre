@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Produtos - GenIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #0d0d0d; /* Cor de fundo escura */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+            height: 100vh;
+        }
+        .sidebar img {
+            width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .sidebar h2 {
+            color: red;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            text-align: left;
+            border-radius: 5px;
+            transition: background 0.3s;
+            margin-left: 40px; /* Remove o deslocamento da esquerda */
+        }
+        .sidebar a:hover {
+            background-color: red;
+        }
+        .sidebar a.active {
+            background-color: #0d0d0d;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+        }
+        .content h1 {
+            font-size: 28px;
+            color: red;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center; /* Centraliza os botões */
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .content .btn {
+            width: auto;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .content .btn:hover {
+            background-color: darkred;
+        }
+        .back-btn {
+            margin-top: auto;
+            text-align: center;
+        }
+        .back-btn a {
+            color: red;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .back-btn a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="{{ url_for('static', filename='images/GenIA-Logo.jpeg') }}" alt="GenIA Logo">
+        <h2>GenIA</h2>
+        <a href="/realizar_venda">Realizar Venda</a>
+        <a href="/gerenciar_produtos" class="active">Gerenciar Produtos</a>
+        <a href="/gerenciar_vendas">Gerenciar Vendas</a>
+        <a href="/gerenciar_clientes">Gerenciar Clientes</a>
+        <a href="/gerenciar_funcionarios">Gerenciar Funcionários</a>
+        <a href="/gerenciar_setor">Gerenciar Setores</a>
+        <a href="/analises">Análises</a>
+        <a href="/dashboard">Dashboard</a>
+    </div>
+    <div class="content">
+        <h1>Gerenciar Produtos</h1>
+
+        <div class="button-container">
+            <a href="/cadastrar_produto" class="btn">Cadastrar Novo Produto</a>
+            <a href="/atualizar_estoque" class="btn">Atualizar Estoque</a>
+            <a href="/gerenciar_categorias_atributos" class="btn">Gerenciar Categorias e Atributos</a>
+            <a href="/visualizar_etiquetas" class="btn">Visualizar Etiquetas</a>
+        </div>
+
+        <h2>Estoque de Produtos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Categoria</th>
+                    <th>Subcategoria</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Cor</th>
+                    <th>Tamanho</th>
+                    <th>Preço Unitário</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in estoque %}
+                <tr>
+                    <td>{{ item.etiqueta }}</td>
+                    <td>{{ item.categoria }}</td>
+                    <td>{{ item.subcategoria }}</td>
+                    <td>{{ item.modelo }}</td>
+                    <td>{{ item.marca }}</td>
+                    <td>{{ item.cor }}</td>
+                    <td>{{ item.tamanho }}</td>
+                    <td>{{ item.preco_unitario }}</td>
+                    <td>{{ item.quantidade }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="back-btn">
+            <a href="/dashboard">Voltar à Tela Principal</a>
+        </div>
+    </div>
+</body>
+</html>

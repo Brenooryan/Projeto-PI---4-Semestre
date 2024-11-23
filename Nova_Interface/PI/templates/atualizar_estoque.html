@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Estoque - GenIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .form-container h1 {
+            font-size: 24px;
+            color: red;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: darkred;
+        }
+        .back-btn {
+            margin-top: 20px;
+            text-align: center;
+            display: block;
+            color: red;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+        .error-message {
+            color: red;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .success-message {
+            color: green;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Atualizar Estoque</h1>
+
+        <!-- Exibe mensagem de erro, se houver -->
+        {% if error %}
+        <div class="error-message">{{ error }}</div>
+        {% endif %}
+
+        <!-- Exibe mensagem de sucesso, se houver -->
+        {% if success %}
+        <div class="success-message">{{ success }}</div>
+        {% endif %}
+
+        <form action="/atualizar_estoque" method="POST">
+            <!-- Campo para digitar a etiqueta -->
+            <input type="text" name="etiqueta" placeholder="Digite a Etiqueta do Produto" required>
+
+            <!-- Campo para selecionar o tamanho -->
+            <select name="tamanho" required>
+                <option value="" disabled selected>Selecione o Tamanho</option>
+                {% for tamanho in tamanhos %}
+                    <option value="{{ tamanho.idTamanho }}">{{ tamanho.nome_Tamanho }}</option>
+                {% endfor %}
+            </select>
+
+            <!-- Campo para digitar a quantidade -->
+            <input type="number" name="quantidade" placeholder="Quantidade" required min="1">
+
+            <!-- Botão para atualizar -->
+            <button type="submit">Atualizar Estoque</button>
+        </form>
+
+        <!-- Link para voltar à página principal -->
+        <a href="/gerenciar_produtos" class="back-btn">Voltar à Tela Principal</a>
+    </div>
+</body>
+</html>

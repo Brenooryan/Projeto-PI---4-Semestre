@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Etiquetas - GenIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #333;
+            color: white;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .back-btn {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Visualizar Etiquetas</h1>
+
+        <!-- Tabela de etiquetas -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Categoria</th>
+                    <th>Subcategoria</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Cor</th>
+                    <th>Estampa</th>
+                    <th>Preço Unitário</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in etiquetas %}
+                <tr>
+                    <td>{{ item.etiqueta }}</td>
+                    <td>{{ item.categoria }}</td>
+                    <td>{{ item.subcategoria }}</td>
+                    <td>{{ item.modelo }}</td>
+                    <td>{{ item.marca }}</td>
+                    <td>{{ item.cor }}</td>
+                    <td>{{ item.estampa }}</td>
+                    <td>{{ item.preco_unitario }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Botão de voltar -->
+    <a href="/gerenciar_produtos" class="back-btn">Voltar à Tela Principal</a>
+</body>
+</html>

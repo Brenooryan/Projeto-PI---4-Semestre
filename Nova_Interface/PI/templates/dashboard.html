@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - GenIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #0d0d0d;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;  /* Centraliza logo e título */
+            padding: 20px 0;
+        }
+        .sidebar img {
+            width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+            height: auto;
+            margin-bottom: 10px; /* Reduz o espaço abaixo da imagem */
+        }
+        .sidebar h2 {
+            color: red;
+            margin-top: 5px; /* Diminui o espaço entre a imagem e o título */
+            margin-bottom: 30px; /* Aumenta o espaço entre o título e os links */
+        }
+        /* Alinha os links à esquerda e adiciona margem à esquerda */
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            width: 100%;
+            text-align: left; /* Alinha os links à esquerda */
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background 0.3s;
+            margin-left: 40px; /* Adiciona um pequeno deslocamento para a direita */
+        }
+        .sidebar a:hover {
+            background-color: red;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            color: red;
+            font-size: 24px;
+        }
+        .header .logout {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .header .logout:hover {
+            background-color: darkred;
+        }
+        .dashboard {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .dashboard h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .dashboard iframe {
+            width: 80%;
+            height: 500px;
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <!-- Caminho relativo da imagem na pasta 'static/images' -->
+        <img src="{{ url_for('static', filename='images/GenIA-Logo.jpeg') }}" alt="GenIA Logo">
+        <h2>GenIA</h2>
+        <a href="/realizar_venda">Realizar Venda</a>
+        <a href="/gerenciar_produtos">Gerenciar Produtos</a>
+        <a href="/gerenciar_vendas">Gerenciar Vendas</a>
+        <a href="/gerenciar_clientes">Gerenciar Clientes</a>
+        <a href="/gerenciar_funcionarios">Gerenciar Funcionários</a>
+        <a href="/gerenciar_setor">Gerenciar Setores</a>
+        <a href="/analises">Análises</a>
+        <a href="/dashboard">Dashboard</a>
+    </div>
+    <div class="content">
+        <div class="header">
+            <h1>Bem-vindo, {{ user }}</h1>
+            <form action="/" method="POST">
+                <button class="logout">Sair</button>
+            </form>
+        </div>
+        <div class="dashboard">
+            <h2>Dashboard de Vendas</h2>
+            <iframe 
+                src="https://your_powerbi_report_link" 
+                title="Dashboard Power BI">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>

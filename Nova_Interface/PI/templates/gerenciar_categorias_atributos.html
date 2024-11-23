@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Categorias e Atributos - GenIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            margin-bottom: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        form h2 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .btn {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: darkred;
+        }
+        .back-btn {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+        .message {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Gerenciar Categorias e Atributos</h1>
+
+        <!-- Mensagens de sucesso ou erro -->
+        <div>
+            {% if success %}
+                <div class="message success">{{ success }}</div>
+            {% endif %}
+            {% if error %}
+                <div class="message error">{{ error }}</div>
+            {% endif %}
+        </div>
+
+        <!-- Formulário para Categoria -->
+        <form method="POST" action="/gerenciar_categorias_atributos">
+            <h2>Cadastrar Categoria</h2>
+            <label for="categoria">Nome da Categoria:</label>
+            <input type="text" id="categoria" name="categoria" required>
+            <button type="submit" class="btn">Cadastrar Categoria</button>
+        </form>
+
+        <!-- Formulário para Subcategoria -->
+        <form method="POST" action="/gerenciar_categorias_atributos">
+            <h2>Cadastrar Subcategoria</h2>
+            <label for="subcategoria">Nome da Subcategoria:</label>
+            <input type="text" id="subcategoria" name="subcategoria" required>
+            <label for="categoria_sub">Categoria:</label>
+            <select id="categoria_sub" name="categoria_id" required>
+                {% for categoria in categorias %}
+                <option value="{{ categoria.idCategoria }}">{{ categoria.nome_Categoria }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit" class="btn">Cadastrar Subcategoria</button>
+        </form>
+
+        <!-- Formulário para Modelo -->
+        <form method="POST" action="/gerenciar_categorias_atributos">
+            <h2>Cadastrar Modelo</h2>
+            <label for="modelo">Nome do Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+            <button type="submit" class="btn">Cadastrar Modelo</button>
+        </form>
+
+        <!-- Formulário para Marca -->
+        <form method="POST" action="/gerenciar_categorias_atributos">
+            <h2>Cadastrar Marca</h2>
+            <label for="marca">Nome da Marca:</label>
+            <input type="text" id="marca" name="marca" required>
+            <button type="submit" class="btn">Cadastrar Marca</button>
+        </form>
+
+        <!-- Formulário para Cor -->
+        <form method="POST" action="/gerenciar_categorias_atributos">
+            <h2>Cadastrar Cor</h2>
+            <label for="cor">Nome da Cor:</label>
+            <input type="text" id="cor" name="cor" required>
+            <button type="submit" class="btn">Cadastrar Cor</button>
+        </form>
+
+        <!-- Formulário para Tamanho -->
+        <form method="POST" action="/gerenciar_categorias_atributos">
+            <h2>Cadastrar Tamanho</h2>
+            <label for="tamanho">Tamanho:</label>
+            <input type="text" id="tamanho" name="tamanho" required>
+            <button type="submit" class="btn">Cadastrar Tamanho</button>
+        </form>
+
+        <!-- Formulário para Estampa -->
+        <form method="POST" action="/gerenciar_categorias_atributos">
+            <h2>Cadastrar Estampa</h2>
+            <label for="estampa">Tipo de Estampa:</label>
+            <input type="text" id="estampa" name="estampa" required>
+            <button type="submit" class="btn">Cadastrar Estampa</button>
+        </form>
+
+        <a href="/gerenciar_produtos" class="back-btn">Voltar à Tela Principal</a>
+    </div>
+</body>
+</html>

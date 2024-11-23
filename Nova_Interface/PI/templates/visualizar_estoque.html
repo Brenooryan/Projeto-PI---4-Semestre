@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Estoque - GenIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .button-container a {
+            text-decoration: none;
+        }
+        .button-container button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button-container button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: red;">Estoque de Produtos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Etiqueta</th>
+                <th>Categoria</th>
+                <th>Subcategoria</th>
+                <th>Modelo</th>
+                <th>Marca</th>
+                <th>Cor</th>
+                <th>Tamanho</th>
+                <th>Preço Unitário</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aqui você vai iterar os dados do estoque -->
+            {% for item in estoque %}
+            <tr>
+                <td>{{ item.etiqueta }}</td>
+                <td>{{ item.categoria }}</td>
+                <td>{{ item.subcategoria }}</td>
+                <td>{{ item.modelo }}</td>
+                <td>{{ item.marca }}</td>
+                <td>{{ item.cor }}</td>
+                <td>{{ item.tamanho }}</td>
+                <td>{{ item.preco_unitario }}</td>
+                <td>{{ item.quantidade }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Botão de Voltar à Tela Principal no final da página -->
+    <div class="button-container">
+        <a href="/gerenciar_produtos">
+            <button>Voltar à Tela Principal</button>
+        </a>
+    </div>
+</body>
+</html>

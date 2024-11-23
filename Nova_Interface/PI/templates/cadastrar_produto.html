@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto - GenIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .form-container h1 {
+            font-size: 24px;
+            color: red;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: darkred;
+        }
+        .back-btn {
+            margin-top: 20px;
+            text-align: center;
+            display: block;
+            color: red;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+        .error-message, .success-message {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .error-message {
+            color: red;
+        }
+        .success-message {
+            color: green;
+        }
+    </style>
+    <script>
+        function carregarSubcategorias() {
+            const categoria = document.querySelector('select[name="categoria"]').value;
+            const subcategoriaSelect = document.querySelector('select[name="subcategoria"]');
+            subcategoriaSelect.innerHTML = '<option value="" disabled selected>Selecione a Subcategoria</option>'; // Reset the subcategory list
+
+            fetch(`/subcategorias/${categoria}`)
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(subcategoria => {
+                        const option = document.createElement('option');
+                        option.value = subcategoria.idSubCategoria;
+                        option.textContent = subcategoria.nome_SubCategoria;
+                        subcategoriaSelect.appendChild(option);
+                    });
+                })
+                .catch(error => console.error('Erro ao carregar subcategorias:', error));
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cadastrar Novo Produto</h1>
+        
+        {% if error %}
+        <div class="error-message">{{ error }}</div>
+        {% endif %}
+        
+        {% if success %}
+        <div class="success-message">{{ success }}</div>
+        {% endif %}
+        
+        <form action="/cadastrar_produto" method="POST">
+            <input type="text" name="etiqueta" placeholder="Etiqueta do Produto" required>
+            
+            <select name="categoria" required onchange="carregarSubcategorias()">
+                <option value="" disabled selected>Selecione a Categoria</option>
+                {% for categoria in categorias %}
+                    <option value="{{ categoria[0] }}" {% if categoria[0] == categoria_selecionada %}selected{% endif %}>
+                        {{ categoria[1] }}
+                    </option>
+                {% endfor %}
+            </select>
+
+            <select name="subcategoria" required>
+                <option value="" disabled selected>Selecione a Subcategoria</option>
+                {% for subcategoria in subcategorias %}
+                    <option value="{{ subcategoria[0] }}" {% if subcategoria[0] == subcategoria_selecionada %}selected{% endif %}>
+                        {{ subcategoria[1] }}
+                    </option>
+                {% endfor %}
+            </select>
+
+            <select name="modelo" required>
+                <option value="" disabled selected>Selecione o Modelo</option>
+                {% for modelo in modelos %}
+                    <option value="{{ modelo[0] }}">{{ modelo[1] }}</option>
+                {% endfor %}
+            </select>
+
+            <select name="marca" required>
+                <option value="" disabled selected>Selecione a Marca</option>
+                {% for marca in marcas %}
+                    <option value="{{ marca[0] }}">{{ marca[1] }}</option>
+                {% endfor %}
+            </select>
+
+            <select name="cor" required>
+                <option value="" disabled selected>Selecione a Cor</option>
+                {% for cor in cores %}
+                    <option value="{{ cor[0] }}">{{ cor[1] }}</option>
+                {% endfor %}
+            </select>
+
+            <select name="estampa" required>
+                <option value="" disabled selected>Selecione a Estampa</option>
+                {% for estampa in estampas %}
+                    <option value="{{ estampa[0] }}">{{ estampa[1] }}</option>
+                {% endfor %}
+            </select>
+
+            <input type="number" name="preco" placeholder="Preço Unitário" required step="0.01">
+            
+            <button type="submit">Salvar Produto</button>
+        </form>
+
+        <a href="/gerenciar_produtos" class="back-btn">Voltar à Tela Principal</a>
+    </div>
+</body>
+</html>

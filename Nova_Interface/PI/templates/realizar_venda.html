@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Venda</title>
+    <style>
+        /* Estilos para a página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+        .form-container h1 {
+            font-size: 24px;
+            color: red;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: darkred;
+        }
+        .back-btn {
+            margin-top: 20px;
+            text-align: center;
+            display: block;
+            color: red;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+        .error-message, .success-message {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .error-message {
+            color: red;
+        }
+        .success-message {
+            color: green;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .item-container {
+            margin-top: 20px;
+        }
+        .item-container input, .item-container select {
+            margin-bottom: 10px;
+        }
+        .total-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Realizar Venda</h1>
+
+        {% if error %}
+        <div class="error-message">{{ error }}</div>
+        {% endif %}
+
+        {% if success %}
+        <div class="success-message">{{ success }}</div>
+        {% endif %}
+
+        <form action="/realizar_venda" method="POST">
+            <!-- Campos para os produtos -->
+            <div id="produtos">
+                <div class="item-container" id="produto_0">
+                    <input type="text" name="etiqueta[]" placeholder="Etiqueta do Produto" required>
+                    <select name="tamanho[]" required>
+                        <option value="" disabled selected>Selecione o Tamanho</option>
+                        {% for tamanho in tamanhos %}
+                            <option value="{{ tamanho[0] }}">{{ tamanho[1] }}</option>
+                        {% endfor %}
+                    </select>
+                    <input type="number" name="quantidade[]" placeholder="Quantidade" required min="1">
+                </div>
+            </div>
+
+            <button type="button" id="adicionarProdutoBtn">Adicionar Outro Produto</button>
+
+            <select name="tipo_pagamento" required>
+                <option value="" disabled selected>Selecione o Tipo de Pagamento</option>
+                {% for tipo in tipos_pagamento %}
+                    <option value="{{ tipo.idTipoPag }}">{{ tipo.Tipo }}</option>
+                {% endfor %}
+            </select>
+
+            <select name="vendedor" required>
+                <option value="" disabled selected>Selecione o Vendedor</option>
+                {% for vendedor in vendedores %}
+                    <option value="{{ vendedor[0] }}">{{ vendedor[1] }}</option>
+                {% endfor %}
+            </select>
+
+            <!-- Campo para CPF e checkbox de consumidor -->
+            <input type="text" name="cpf_cliente" placeholder="CPF do Cliente" id="cpf_cliente" pattern="\d{11}" maxlength="11">
+            <div class="checkbox-container">
+                <input type="checkbox" id="sem_cpf" name="sem_cpf" value="sim">
+                <label for="sem_cpf">Consumidor</label>
+            </div>
+
+            <!-- Total da venda -->
+            <div class="total-container">
+                <h3>Total: <span id="totalVenda">0</span></h3>
+            </div>
+
+            <button type="submit">Finalizar Venda</button>
+        </form>
+
+        <a href="/dashboard" class="back-btn">Voltar à Tela Principal</a>
+    </div>
+
+    <script>
+        const cpfInput = document.getElementById('cpf_cliente');
+        const semCpfCheckbox = document.getElementById('sem_cpf');
+        const adicionarProdutoBtn = document.getElementById('adicionarProdutoBtn');
+        const produtosContainer = document.getElementById('produtos');
+        const totalVendaElement = document.getElementById('totalVenda');
+
+        // Desabilitar campo CPF se "Consumidor" for selecionado
+        semCpfCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                cpfInput.disabled = true;
+                cpfInput.value = ''; // Limpar o campo CPF
+            } else {
+                cpfInput.disabled = false;
+            }
+        });
+
+        // Função para adicionar um novo produto
+        let produtoCount = 1;
+        adicionarProdutoBtn.addEventListener('click', function() {
+            const novoProdutoDiv = document.createElement('div');
+            novoProdutoDiv.classList.add('item-container');
+            novoProdutoDiv.id = `produto_${produtoCount}`;
+
+            novoProdutoDiv.innerHTML = `
+                <input type="text" name="etiqueta[]" placeholder="Etiqueta do Produto" required>
+                <select name="tamanho[]" required>
+                    <option value="" disabled selected>Selecione o Tamanho</option>
+                    {% for tamanho in tamanhos %}
+                        <option value="{{ tamanho[0] }}">{{ tamanho[1] }}</option>
+                    {% endfor %}
+                </select>
+                <input type="number" name="quantidade[]" placeholder="Quantidade" required min="1" class="quantidade">
+            `;
+            produtosContainer.appendChild(novoProdutoDiv);
+
+            produtoCount++;
+        });
+
+        // Atualizar o total da venda ao alterar a quantidade
+        produtosContainer.addEventListener('input', function(event) {
+            if (event.target.classList.contains('quantidade')) {
+                let total = 0;
+                const inputs = produtosContainer.querySelectorAll('.item-container');
+                inputs.forEach(function(inputDiv) {
+                    const quantidadeInput = inputDiv.querySelector('.quantidade');
+                    const quantidade = parseInt(quantidadeInput.value) || 0;
+                    const etiqueta = inputDiv.querySelector('input[name="etiqueta[]"]').value;
+
+                    // Buscar preço do produto no servidor com base na etiqueta
+                    if (etiqueta) {
+                        fetch(`/obter_preco/${etiqueta}`)
+                            .then(response => response.json())
+                            .then(data => {
+                                const precoUnitario = data.preco || 0;
+                                total += precoUnitario * quantidade;
+                                totalVendaElement.textContent = total;
+                            })
+                            .catch(error => console.error('Erro ao buscar preço do produto:', error));
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
